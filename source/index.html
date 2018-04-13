@@ -11,8 +11,8 @@
 	<header class="page-header">
 		<nav class="main-nav">
 			<button class="main-nav__toggle button-toggle" type="button">Меню</button>
-			<ul class="main-nav-list site-list">
-				<li site-list__item>
+			<ul class="main-nav__list site-list">
+				<li class="site-list__item">
 					<a class="site-list__link site-logo">
 						<img class="site-logo__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип магазина 'Cat Energy'">
 						<h1 class="site-logo__title">Cat Energy</h1>
@@ -34,37 +34,42 @@
 	<main class="page-main">
 
 		<!--	Промо	-->
-		<section>
-			<h2>
-				Функциональное питание для котов
-			</h2>
-			<p>
-				Занялся собой? Займись котом!
-			</p>
-			<img src="img/can-mobile.png" width="280" height="270" alt="Изображение продукта 'Cat Energy PRO Курица'">
-			<a class="button" href="form.html">Подобрать программу</a>
-		</section>
 
-		<!--	Услуги магазина	-->
-		<section>
-			<ul>
-				<li>
-					<h3>Похудение</h3>
-					<p>
+		<section class="programs">
+			<h2 class="visually-hidden">Выбор программы</h2>
+			<header class="programs__header promo">
+				<h2 class="promo__title">
+					Функциональное питание для котов
+				</h2>
+				<p class="promo__slogan">
+					Занялся собой? Займись котом!
+				</p>
+				<p class="promo__image-wrapper">
+					<img class="promo__image" src="img/can-mobile.png" width="280" height="270" alt="Изображение продукта 'Cat Energy PRO Курица'">
+				</p>
+				<a class="promo__button button act-button--green" href="form.html">Подобрать программу</a>
+			</header>
+
+			<section class="programs__list">
+				<h2 class="visually-hidden">Список программ</h2>
+				<article class="programs__item slim-program">
+					<h3 class="slim-program__title">Похудение</h3>
+					<p class="slim-program__description">
 						Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
 					</p>
-					<a class="button" href="catalog.html">Каталог Slim</a>
-				</li>
-				<li>
-					<h3>Набор массы</h3>
-					<p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-					<a class="button" href="catalog.html">Каталог Pro</a>
-				</li>
-			</ul>
+					<a class="slim-program__button button link-button" href="catalog.html">Каталог Slim</a>
+				</article>
+				<article class="programs__item mass-program">
+					<h3 class="mass-program__title">Набор массы</h3>
+					<p class="mass-program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+					<a class="mass-program__button button link-button" href="catalog.html">Каталог Pro</a>
+				</article>
+			</section>
+
 		</section>
 
 		<!--	Преимущества	-->
-		<section>
+		<section class="advantages">
 			<h2>Как это работает</h2>
 			<ul>
 				<li>Функциональное питание содержит только полезные питательные вещества.</li>

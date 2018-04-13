@@ -243,51 +243,62 @@
 			</p>
 		</section>
 
-		<!-- Блок Контакты -->
-		<section>
-			<h2 class="visually-hidden">Контакты</h2>
-			<p>
-				Приглашаем к сотрудничеству дилеров!
-			</p>
-			<p>
-				ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-			</p>
-		</section>
-
-		<!-- Карта -->
-		<section>
-			<h2 class="visually-hidden">Карта</h2>
-			<p>
-				<img src="img/map.jpg" width="320" height="362" alt="Cat Energy: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-			</p>
+		<!-- Контактная информация -->
+		<section class="location">
+			<h2 class="visually-hidden">Где мы находимся</h2>
+			<div class="location__wrapper">
+				<aside class="location__info contacts">
+					<h2 class="visually-hidden">Контакты</h2>
+					<p class="contacts__text">
+						Приглашаем к сотрудничеству дилеров!
+					</p>
+					<p class="contacts__address">
+						ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+					</p>
+				</aside>
+				<p class="location__map">
+					<img class="location__static-map" src="img/map.jpg" width="320" height="362" alt="Cat Energy: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+				</p>
+			</div>
 		</section>
 
 	</main>
 
 	<!-- Футер -->
-	<footer>
-		<!-- Лого в футере -->
-		<a href="index.html">
-			<img src="img/footer-logo.svg" width="128" height="24" alt="Текстовый логотип компании 'Cat Energy'">
-		</a>
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
 
-		<!-- Социальные кнопки -->
-		<div>
-			<ul>
-				<li><a href="#">ВКонтакте</a></li>
-				<li><a href="#">Instagram</a></li>
-				<li><a href="#">Facebook</a></li>
-			</ul>
-		</div>
+			<!--	Логотип	-->
+			<div class="page-footer__logo">
+				<a class="page-footer__logo-link" href="index.html"><b class="page-footer__logo_accent">Cat</b> Energy</a>
+			</div>
 
-		<!-- Копирайт	-->
-		<div>
-			<p>
-				<a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-			</p>
-			<a href="https://htmlacademy.ru/intensive/adaptive">
-					<img src="img/html-academy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
+			<!-- Социальные кнопки -->
+			<div class="page-footer__social social">
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link social__link--vkontakte" href="#">Мы во ВКонтакте</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--instagram" href="#">Мы в Instagram</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--facebook" href="#">Мы в Facebook</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Копирайт	-->
+			<div class="page-footer__copyright copyright">
+
+				<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+					HTML Academy
 				</a>
+
+				<a class="copyright__img" href="https://htmlacademy.ru/intensive/adaptive">
+					<img class="copyright__logo" src="img/html-academy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
+				</a>
+			</div>
 		</div>
 	</footer>
 

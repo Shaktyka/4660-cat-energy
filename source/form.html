@@ -175,29 +175,40 @@
 	</main>
 
 	<!-- Футер -->
-	<footer>
-		<!-- Лого в футере -->
-		<a href="index.html">
-			<img src="img/footer-logo.svg" width="128" height="24" alt="Текстовый логотип компании 'Cat Energy'">
-		</a>
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
 
-		<!-- Социальные кнопки -->
-		<div>
-			<ul>
-				<li><a href="#">ВКонтакте</a></li>
-				<li><a href="#">Instagram</a></li>
-				<li><a href="#">Facebook</a></li>
-			</ul>
-		</div>
+			<!--	Логотип	-->
+			<div class="page-footer__logo logo">
+				<a class="logo__link" href="index.html"><b class="logo__accent">Cat</b> Energy</a>
+			</div>
 
-		<!-- Копирайт	-->
-		<div>
-			<p>
-				<a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-			</p>
-			<a href="https://htmlacademy.ru/intensive/adaptive">
-					<img src="img/html-academy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
+			<!-- Социальные кнопки -->
+			<div class="page-footer__social social">
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link social__link--vkontakte" href="#">Мы во ВКонтакте</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--instagram" href="#">Мы в Instagram</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--facebook" href="#">Мы в Facebook</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Копирайт	-->
+			<div class="page-footer__copyright copyright">
+
+				<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+					HTML Academy
 				</a>
+
+				<a class="copyright__img" href="https://htmlacademy.ru/intensive/adaptive">
+					<img class="copyright__logo" src="img/html-academy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
+				</a>
+			</div>
 		</div>
 	</footer>
 

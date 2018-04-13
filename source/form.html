@@ -34,30 +34,31 @@
 	<main class="page-main">
 		<h1 class="page-main__header">Подбор программы</h1>
 
-		<section>
+		<section class="questionary">
 			<h2 class="visually-hidden">Форма для выбора программы</h2>
 
-			<p>
+			<p class="questionary__text">
 				Заполните анкету и мы подберём программу питания для вашего кота
 			</p>
 
-			<form name="filter-form" action="https://htmlacademy.ru/echo" method="get">
+			<form class="questionary__form" name="program-form" action="https://htmlacademy.ru/echo" method="get">
 
-				<fieldset>
-					<ul>
-						<li>
+				<fieldset class="questionary__cat cat-data">
+					<legend class="visually-hidden">Данные кота</legend>
+					<ul class="cat-data__list">
+						<li class="cat-data__item">
 							<label for="cat-name">
 							Имя:
 							<input type="text" name="cat-name-field" id="cat-name" placeholder="Барсик" required>
 						</label>
 						</li>
-						<li>
+						<li class="cat-data__item">
 							<label for="cat-weight">
 							Вес (кг):
 							<input type="number" name="cat-weight-field" id="cat-weight" placeholder="7" required>
 						</label>
 						</li>
-						<li>
+						<li class="cat-data__item">
 							<label for="cat-age">
 							Возраст (лет):
 							<input type="text" name="cat-age-field" id="cat-age" placeholder="7">
@@ -66,21 +67,22 @@
 					</ul>
 				</fieldset>
 
-				<fieldset>
-					<ul>
-						<li>
+				<fieldset class="questionary__aim aim">
+					<legend class="visually-hidden">Какой цели вы хотите достичь</legend>
+					<ul class="aim__list">
+						<li class="aim__item">
 							<label for="slim">
 							<input type="radio" name="purpose" id="slim" value="slim" checked>
 							Похудение
 						</label>
 						</li>
-						<li>
+						<li class="aim__item">
 							<label for="fatness">
 							<input type="radio" name="purpose" id="fatness" value="fatness" tabindex="0">
 							Набор массы
 						</label>
 						</li>
-						<li>
+						<li class="aim__item">
 							<label for="advice">
 							<input type="radio" name="purpose" id="advice" value="advice" tabindex="0"> 
 							Не знаю (нужен ваш совет)
@@ -89,18 +91,16 @@
 					</ul>
 				</fieldset>
 
-				<fieldset>
-					<legend>
-						Контактные данные (владельца кота)
-					</legend>
-					<ul>
-						<li>
+				<fieldset class="questionary__owner owner-data">
+					<legend class="owner-data__text">Контактные данные (владельца кота)</legend>
+					<ul class="owner-data__list">
+						<li class="owner-data__item">
 							<label>
 								email:
 								<input type="email" name="email-field" id="user-email" placeholder="kuklachev@gmail.com" required>
 							</label>
 						</li>
-						<li>
+						<li class="owner-data__item">
 							<label>
 								Телефон:
 								<input type="tel" name="phone-field" id="user-phone" placeholder="8(960)60-90" required>
@@ -109,33 +109,33 @@
 					</ul>
 				</fieldset>
 
-				<fieldset>
-					<legend>Комментарий</legend>
-					<textarea name="message" maxlength="2000" placeholder="Расскажите обо всех повадках кота"></textarea>
-				</fieldset>
+				<div class="questionary__comment comment">
+					<p class="comment__text">Комментарий</p>
+					<textarea class="comment__field" name="message" maxlength="2000" placeholder="Расскажите обо всех повадках кота"></textarea>
+				</div>
 
-				<fieldset>
-					<legend>Дополнительно</legend>
-					<ul>
-						<li>
+				<fieldset class="questionary__extra extra">
+					<legend class="extra__text">Дополнительно</legend>
+					<ul class="extra__list">
+						<li class="extra__item">
 							<label for="sweetener">
 								<input type="checkbox" name="extra" id="sweetener" value="sweetener" checked>
 								сахарозаменитель
 							</label>
 						</li>
-						<li>
+						<li class="extra__item">
 							<label for="water">
 								<input type="checkbox" name="extra" id="water" value="water" tabindex="0">
 								питьевая вода
 							</label>
 						</li>
-						<li>
+						<li class="extra__item">
 							<label for="milk">
 								<input type="checkbox" name="extra" id="milk" value="milk" tabindex="0">
 								молоко
 							</label>
 						</li>
-						<li>
+						<li class="extra__item">
 							<label for="vitamins">
 								<input type="checkbox" name="extra" id="vitamins" value="vitamins" tabindex="0">
 								витамины
@@ -144,9 +144,9 @@
 					</ul>
 				</fieldset>
 
-				<button type="submit">Отправить заявку</button>
+				<button class="questionary__button button act-button--green" type="submit">Отправить заявку</button>
 			</form>
-			<p>* - Обязательные поля</p>
+			<small>* - Обязательные поля</small>
 		</section>
 
 		<!-- Контактная информация -->

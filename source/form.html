@@ -43,11 +43,11 @@
           <legend class="visually-hidden">Данные кота</legend>
           <ul class="cat-data__list">
             <li class="cat-data__field">
-              <label for="cat-name">Имя:</label>
+              <label for="cat-name">Имя:<sup>*</sup></label>
               <input type="text" name="cat-name-field" id="cat-name" placeholder="Барсик" required>
             </li>
             <li class="cat-data__field">
-              <label for="cat-weight">Вес (кг):</label>
+              <label for="cat-weight">Вес (кг):<sup>*</sup></label>
               <input type="number" name="cat-weight-field" id="cat-weight" placeholder="7" required>
             </li>
             <li class="cat-data__field">
@@ -77,11 +77,11 @@
           <h2 class="owner-data__title">Контактные данные (владельца кота)</h2>
           <ul class="owner-data__list">
             <li class="owner-data__field">
-              <label for="user-email">email:</label>
+              <label for="user-email">email:<sup>*</sup></label>
               <input type="email" name="email-field" id="user-email" placeholder="kuklachev@gmail.com" required>
             </li>
             <li class="owner-data__field">
-              <label for="user-phone">Телефон:</label>
+              <label for="user-phone">Телефон:<sup>*</sup></label>
               <input type="tel" name="phone-field" id="user-phone" placeholder="8(960)60-90" required>
             </li>
           </ul>
@@ -113,7 +113,7 @@
         </fieldset>
         <button class="questionary__button button act-button--green" type="submit">Отправить заявку</button>
       </form>
-      <small>* - Обязательные поля</small>
+      <small><sup>*</sup> &mdash; Обязательные поля</small>
     </section>
     <!-- Контактная информация -->
     <section class="location">

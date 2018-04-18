@@ -1,22 +1,26 @@
 .site-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 320px;
   .ls-none;
   .mp-zero;
+  .center;
 
   .ff-oswald;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  color: #black;
+  .font(20px;
+  20px;
+  500;
+  @black);
   .t-upper;
+
+  border-bottom: 1px solid @line-color;
 }
 
 .site-list__item {}
 
+.site-list__item--active {}
+
 .site-list__link {
   display: block;
-  border-top: 1px solid @line-color;
+  padding: 24px 0;
   color: @black;
+  border-top: 1px solid @line-color;
 }

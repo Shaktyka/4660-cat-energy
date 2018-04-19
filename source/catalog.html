@@ -8,12 +8,14 @@
 </head>
 
 <body class="page">
-  <header class="page-header container">
-    <a class="page-header__logo link">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина 'Cat Energy'">
-    </a>
-    <nav class="main-nav">
+  <header class="page-header">
+    <div class="page-header__logo-wrapper container">
+      <a class="page-header__logo link" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина 'Cat Energy'">
+      </a>
       <button class="main-nav__toggle" type="button">Меню</button>
+    </div>
+    <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -31,7 +33,7 @@
   </header>
   <main class="page-main">
     <h1 class="page-main__header">Каталог продукции</h1>
-    <section class="catalog">
+    <section class="catalog container">
       <ul class="catalog__list">
         <li class="catalog__item product">
           <a class="product__link link" href="#">
@@ -192,7 +194,7 @@
       </ul>
     </section>
     <!-- Блок Дополнительные товары -->
-    <section class="additional">
+    <section class="additional container">
       <div class="additional__wrapper">
         <h2 class="additional__title">Дополнительные товары</h2>
 
@@ -253,29 +255,37 @@
           </p>
         </aside>
         <p class="location__map">
-          <img class="location__static-map" src="img/map.jpg" width="320" height="362" alt="Cat Energy: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="location__static-map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Cat Energy: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </p>
       </div>
     </section>
   </main>
   <!-- Футер -->
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
       <!--  Логотип -->
-      <div class="page-footer__logo">
-        <a class="page-footer__logo-link link" href="index.html"><b class="page-footer__logo_accent">Cat</b> Energy</a>
+      <div class="page-footer__logo-wrapper">
+        <a class="page-footer__logo-link link" href="index.html">
+          <img class="page-footer__logo-picture" src="img/logo-footer.svg" width="128" height="24" alt="Логотип компании 'Cat Energy'">
+        </a>
       </div>
       <!-- Социальные кнопки -->
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte link" href="#">Мы во ВКонтакте</a>
+            <a class="social__link social__link--vkontakte link" href="#">
+              <span class="visually-hidden">Мы во ВКонтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram link" href="#">Мы в Instagram</a>
+            <a class="social__link social__link--instagram link" href="#">
+              <span class="visually-hidden">Мы в Instagram</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook link" href="#">Мы в Facebook</a>
+            <a class="social__link social__link--facebook link" href="#">
+              <span class="visually-hidden">Мы в Facebook</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -285,7 +295,7 @@
           HTML Academy
         </a>
         <a class="copyright__img link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="img/html-academy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
+          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
         </a>
       </div>
     </div>

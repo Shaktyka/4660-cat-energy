@@ -1,8 +1,31 @@
-.add-on {}
+.add-on {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid @line-gray;
+}
 
-.add-on__title {}
+.add-on:first-child {
+  border-top: 1px solid @line-gray;
+}
 
-.add-on__info {}
+.add-on__title {
+  .mp-zero;
+  margin-bottom: 15px;
+  .ff-oswald;
+  .t-upper;
+  .font(16px;
+  16px;
+  400;
+  @black222);
+}
+
+.add-on__info {
+  display: flex;
+  justify-content: space-between;
+  .mp-zero;
+  margin-bottom: 13px;
+  line-height: 14px;
+}
 
 .add-on__pack {}
 

@@ -4,28 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>Подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип магазина 'Cat Energy'">
-      <p class="page-header__logo-text">
-        <b>Cat</b> Energy
-      </p>
+    <div class="page-header__logo-wrapper container">
+      <a class="page-header__logo link" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина 'Cat Energy'">
     </a>
-    <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Меню</button>
+    </div>
+    <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+            <a class="site-list__link link" href="index.html ">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link link" href="catalog.html ">Каталог продукции</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Подбор программы</a>
+            <a class="site-list__link link">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -66,7 +66,7 @@
             </ul>
           </fieldset>
           <fieldset class="questionary__group aim">
-            <legend class="visually-hidden">Какой цели вы хотите достичь</legend>
+            <legend class="visually-hidden ">Какой цели вы хотите достичь</legend>
             <ul class="aim__list">
               <li class="aim__option">
                 <input class="visually-hidden form-input form-input-radio" type="radio" name="purpose" id="slim" value="slim" checked>
@@ -127,13 +127,17 @@
                 <label class="form__label" for="milk" tabindex="0">молоко</label>
               </li>
               <li class="extra__option">
-                <input class="visually-hidden form-input form-input-checkbox" type="checkbox" name="extra" id="vitamins" value="vitamins">
+                <input class="visually-hidden form-input form-input-checkbox" type="checkbox" name="extra" id="vitamins" value="vitamins ">
                 <label class="form__label" for="vitamins" tabindex="0">витамины</label>
               </li>
             </ul>
           </fieldset>
-          <button class="questionary__button button button--green" type="submit">Отправить заявку</button>
-          <small class="form__legend"><sup>*</sup> &mdash; Обязательные поля</small>
+          <p class="questionary__button-wrapper container">
+            <button class="questionary__button button button--green" type="submit">Отправить заявку</button>
+          </p>
+          <p class="form__legend-wrapper">
+            <small class="form__legend"><sup>*</sup> &mdash; Обязательные поля</small>
+          </p>
         </form>
       </div>
     </section>
@@ -143,7 +147,7 @@
       <div class="location__wrapper">
         <aside class="location__info contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__text">
+          <p class="contacts__invite">
             Приглашаем к сотрудничеству дилеров!
           </p>
           <p class="contacts__address">
@@ -151,39 +155,47 @@
           </p>
         </aside>
         <p class="location__map">
-          <img class="location__static-map" src="img/map.jpg" width="320" height="362" alt="Cat Energy: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="location__static-map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Cat Energy: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </p>
       </div>
     </section>
   </main>
   <!-- Футер -->
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
       <!--  Логотип -->
-      <div class="page-footer__logo">
-        <a class="page-footer__logo-link" href="index.html"><b class="page-footer__logo_accent">Cat</b> Energy</a>
+      <div class="page-footer__logo-wrapper">
+        <a class="page-footer__logo-link link" href="index.html">
+          <img class="page-footer__logo-picture" src="img/logo-footer.svg" width="128" height="24" alt="Логотип компании 'Cat Energy'">
+        </a>
       </div>
       <!-- Социальные кнопки -->
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Мы во ВКонтакте</a>
+            <a class="social__link social__link--vkontakte link" href="#">
+              <span class="visually-hidden">Мы во ВКонтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Instagram</a>
+            <a class="social__link social__link--instagram link" href="#">
+              <span class="visually-hidden">Мы в Instagram</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Facebook</a>
+            <a class="social__link social__link--facebook link" href="#">
+              <span class="visually-hidden">Мы в Facebook</span>
+            </a>
           </li>
         </ul>
       </div>
       <!-- Копирайт -->
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
         </a>
-        <a class="copyright__img" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="img/html-academy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
+        <a class="copyright__img link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
         </a>
       </div>
     </div>

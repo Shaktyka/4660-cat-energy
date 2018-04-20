@@ -1,9 +1,23 @@
 .link-button {
   display: block;
   .ff-oswald;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  color: @black;
+  .font(16px;
+  16px;
+  400;
+  @black);
   .t-upper;
+}
+
+@media (min-width: @tablet-width) {
+  .link-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .link-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

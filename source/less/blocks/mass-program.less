@@ -1,6 +1,6 @@
 .mass-program {
+  box-sizing: border-box;
   padding: 35px 20px 21px 21px;
-  outline: 1px dashed green;
 }
 
 .mass-program__title {
@@ -22,4 +22,29 @@
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid @line-color;
+}
+
+@media (min-width: @tablet-width) {
+  .mass-program {
+    width: auto;
+    min-height: 371px;
+  }
+
+  .mass-program__title {
+    padding-left: 0;
+    font-size: 36px;
+  }
+
+  .mass-program__description {
+    width: 343px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mass-program {
+    width: 570px;
+  }
 }

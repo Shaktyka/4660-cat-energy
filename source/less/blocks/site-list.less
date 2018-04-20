@@ -11,6 +11,7 @@
   .t-upper;
 
   border-bottom: 1px solid @line-color;
+  background-color: yellow;
 }
 
 .site-list__link {
@@ -19,4 +20,27 @@
   padding-bottom: 24px;
   color: @black;
   border-top: 1px solid @line-color;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 516px;
+  }
+
+  .site-list__link {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 570px;
+  }
+
+  .site-list__link {
+    border: none;
+  }
 }

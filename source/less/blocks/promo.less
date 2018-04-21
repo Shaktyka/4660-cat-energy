@@ -44,21 +44,24 @@
 @media (min-width: @tablet-width) {
   .promo {
     position: relative;
-    width: 516px;
+    width: auto;
+  }
+
+  .promo__text-wrapper {
+    width: 427px;
+    margin-left: 90px;
+    text-align: left;
   }
 
   .promo__title {
-    padding-left: 90px;
-    text-align: left;
     .font(60px;
     60px;
     400;
     @black);
+    margin-bottom: 34px;
   }
 
   .promo__slogan {
-    padding-left: 90px;
-    text-align: left;
     .font(20px;
     20px;
     400;
@@ -73,7 +76,7 @@
 
   .promo__button {
     position: absolute;
-    top: 240px;
+    top: 260px;
     width: 245px;
     margin-left: 90px;
   }

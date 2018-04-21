@@ -16,13 +16,65 @@
 }
 
 .advantages__item {
+  position: relative;
   padding-left: 80px;
   margin-bottom: 20px;
 }
 
-//.advantages__item:last-child {
-//  margin-bottom: 0;
-//}
+.advantages__item::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.advantages__item--nutrient::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--instant::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--change::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--fast::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+}
+
 // Планшет
 @media (min-width: @tablet-width) {
   .advantages {
@@ -51,6 +103,51 @@
     font-size: 16px;
     line-height: 24px;
     outline: 1px dashed orange;
+  }
+
+  .advantages__item::before {
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+  }
+
+  .advantages__item--nutrient::after {
+    top: 13px;
+    left: 13px;
+  }
+
+  .advantages__item--instant::after {
+    top: 13px;
+    left: 13px;
+  }
+
+  .advantages__item--change::after {
+    top: 13px;
+    left: 13px;
+  }
+
+  .advantages__item--fast::after {
+    top: 13px;
+    left: 13px;
+  }
+
+  .advantages__text-number {
+    position: relative;
+    .mp-zero;
+  }
+
+  .advantages__text-number--one::after {
+    position: absolute;
+    content: "\0031";
+    top: -157px;
+    right: 15px;
+    .ff-oswald;
+    .font (281.07px;
+    281.07px;
+    400;
+    @light-gray);
+    z-index: -1;
   }
 }
 

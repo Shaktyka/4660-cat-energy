@@ -5,6 +5,7 @@
 }
 
 .slim-program__title {
+  position: relative;
   .mp-zero;
   padding-left: 70px;
   margin-bottom: 33px;
@@ -15,6 +16,18 @@
   400;
   @black);
   .t-upper;
+}
+
+.slim-program__title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 53px;
+  background-color: #68b738;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
 }
 
 .slim-program__description {

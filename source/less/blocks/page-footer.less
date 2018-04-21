@@ -9,6 +9,11 @@
   justify-content: center;
 }
 
+.page-footer__logo-link {
+  //убираем отступ под изображением
+  display: flex;
+}
+
 .page-footer__logo-picture {
   width: 128px;
   height: 24px;
@@ -17,6 +22,31 @@
 @media (min-width: @tablet-width) {
   .page-footer {
     width: auto;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 58px;
+    padding-bottom: 59px;
+  }
+
+  .page-footer__logo-wrapper {
+    width: 162px;
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .page-footer__social {
+    width: 324px;
+  }
+
+  .page-footer__copyright {
+    width: 162px;
   }
 }
 

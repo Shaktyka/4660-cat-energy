@@ -11,7 +11,7 @@
 
 .page-header__logo {
   display: inline-block;
-  padding-top: 11px;
+  padding-top: 8px;
   padding-bottom: 16px;
 }
 
@@ -31,8 +31,19 @@
     padding-right: 30px;
   }
 
+  .page-header__logo {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
   .page-header__logo-wrapper {
     padding-left: 0;
+  }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
   }
 }
 
@@ -42,5 +53,16 @@
     margin: 0;
     padding-left: 110px;
     padding-right: 110px;
+    z-index: 10;
+  }
+
+  .page-header__logo {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }

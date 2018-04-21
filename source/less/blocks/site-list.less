@@ -27,10 +27,14 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
     width: 516px;
+    border: none;
   }
 
   .site-list__item {
+    margin-bottom: 6px;
     margin-left: 38px;
   }
 
@@ -38,9 +42,15 @@
     margin-left: 0;
   }
 
+  .site-list__item--active {
+    border-bottom: 2px solid @green;
+  }
+
   .site-list__link {
+    padding-top: 0;
+    padding-bottom: 10px;
     .font (18px;
-    24, 86px;
+    24.86px;
     400;
     @black222);
     border: none;

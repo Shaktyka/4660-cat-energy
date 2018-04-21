@@ -7,5 +7,29 @@
 .location__map {
   // чтобы убрать отступ под картой
   display: flex;
+  justify-content: center;
   .mp-zero;
+}
+
+.location__static-map {
+  width: 320px;
+  height: 362px;
+}
+
+@media (min-width: @tablet-width) {
+  .location {
+    width: auto;
+  }
+
+  .location__static-map {
+    width: 767px;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location {
+    width: 1440px;
+    height: 400px;
+  }
 }

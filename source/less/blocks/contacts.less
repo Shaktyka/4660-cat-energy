@@ -7,6 +7,7 @@
 }
 
 .contacts__invite {
+  box-sizing: border-box;
   width: 140px;
   .mp-zero;
 
@@ -19,7 +20,43 @@
 }
 
 .contacts__address {
+  box-sizing: border-box;
   width: 140px;
   .mp-zero;
   line-height: 20px;
+}
+
+.contacts__address-street {
+  display: block;
+  .mp-zero;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .contacts__invite {
+    width: 200px;
+    padding-left: 42px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    padding-right: 42px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 570px;
+  }
 }

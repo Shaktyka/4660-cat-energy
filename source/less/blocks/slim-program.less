@@ -1,6 +1,7 @@
 .slim-program {
   box-sizing: border-box;
   padding: 35px 20px 21px 21px;
+  background-color: @light-gray;
 }
 
 .slim-program__title {
@@ -24,6 +25,7 @@
   border-bottom: 1px solid @line-color;
 }
 
+// Планшет
 @media (min-width: @tablet-width) {
   .slim-program {
     width: auto;
@@ -41,13 +43,26 @@
     width: 372px;
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 0;
     margin-bottom: 60px;
     border: none;
   }
 }
 
+// Десктоп
 @media (min-width: @desktop-width) {
   .slim-program {
     width: 570px;
+    padding: 82px 52px 65px 53px;
+  }
+
+  .slim-program__title {
+    padding-left: 164px;
+    margin-bottom: 72px;
+  }
+
+  .slim-program__description {
+    width: 465px;
+    margin-bottom: 35px;
   }
 }

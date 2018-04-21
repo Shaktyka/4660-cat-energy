@@ -1,6 +1,7 @@
 .mass-program {
   box-sizing: border-box;
   padding: 35px 20px 21px 21px;
+  background-color: @light-gray;
 }
 
 .mass-program__title {
@@ -24,6 +25,7 @@
   border-bottom: 1px solid @line-color;
 }
 
+// Планшет
 @media (min-width: @tablet-width) {
   .mass-program {
     width: auto;
@@ -41,13 +43,26 @@
     width: 343px;
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 0;
     margin-bottom: 60px;
     border: none;
   }
 }
 
+// Десктоп
 @media (min-width: @desktop-width) {
   .mass-program {
     width: 570px;
+    padding: 82px 73px 65px 52px;
+  }
+
+  .mass-program__title {
+    padding-left: 164px;
+    margin-bottom: 72px;
+  }
+
+  .mass-program__description {
+    width: 447px;
+    margin-bottom: 35px;
   }
 }

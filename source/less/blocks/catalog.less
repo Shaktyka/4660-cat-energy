@@ -7,7 +7,22 @@
 @media (min-width: @tablet-width) {
   .catalog {
     width: auto;
-    margin: 0;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 324px;
+    background-color: @light-gray;
+  }
+
+  .catalog__button {
+    width: 249px;
+    margin: 0 auto;
   }
 }
 

@@ -56,3 +56,34 @@
 .product__value {
   text-align: right;
 }
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .product__title {
+    font-size: 20px;
+  }
+
+  .product__wrapper {
+    flex-direction: column;
+    width: 249px;
+    margin: auto;
+  }
+
+  .product__description {
+    margin-bottom: 33px;
+  }
+
+  .product__title {
+    width: 130px;
+    .center;
+    margin: auto;
+    margin-bottom: 28px;
+  }
+
+  .product__link {
+    .center;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {}

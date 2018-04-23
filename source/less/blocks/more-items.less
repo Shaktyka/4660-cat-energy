@@ -2,9 +2,12 @@
   .center;
   padding-top: 82px;
   padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .more-items__show {
+  position: relative;
   .mp-zero;
   margin-bottom: 10px;
   .ff-oswald;
@@ -15,6 +18,18 @@
   @black);
 }
 
+.more-items__show::before {
+  position: absolute;
+  content: "";
+  top: -57px;
+  left: 125px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
 .more-items__text {
   .mp-zero;
   margin-bottom: 20px;
@@ -23,3 +38,14 @@
   400;
   @dark-gray);
 }
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .more-items {
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {}

@@ -1,7 +1,6 @@
 .offer {
   padding-top: 190px;
   padding-bottom: 45px;
-
   background-color: @green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -10,10 +9,45 @@
 }
 
 .offer__slogan {
+  position: relative;
   width: 160px;
   .mp-zero;
   margin: 0 auto;
   .center;
   line-height: 20px;
   color: @white;
+}
+
+.offer__slogan::before {
+  position: absolute;
+  content: "";
+  top: -125px;
+  left: 53px;
+  width: 55px;
+  height: 60px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .offer {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    min-height: 200px;
+    padding-top: 75px;
+    padding-bottom: 70px;
+    background-size: cover;
+  }
+
+  .offer__slogan {
+    margin: 0;
+    margin-right: 125px;
+    text-align: left;
+  }
+
+  .offer__slogan::before {
+    top: 0;
+    left: -300px;
+  }
 }

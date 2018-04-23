@@ -3,10 +3,16 @@
   .ls-none;
 }
 
+.catalog__item {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+}
+
 // Планшет
 @media (min-width: @tablet-width) {
   .catalog {
-    width: auto;
+    width: 0 auto;
   }
 
   .catalog__list {
@@ -17,7 +23,7 @@
 
   .catalog__item {
     width: 324px;
-    background-color: @light-gray;
+    min-height: 570px; //    margin-bottom: 58px;
   }
 
   .catalog__button {

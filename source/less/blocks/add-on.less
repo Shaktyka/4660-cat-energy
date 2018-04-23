@@ -1,4 +1,5 @@
 .add-on {
+  box-sizing: border-box;
   padding-top: 14px;
   padding-bottom: 17px;
   border-bottom: 1px solid @line-gray;
@@ -60,4 +61,33 @@
 }
 
 // Десктоп
-@media (min-width: @desktop-width) {}
+@media (min-width: @desktop-width) {
+  .add-on {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 895px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .add-on__wrapper {
+    width: 610px;
+    margin-bottom: 0;
+  }
+
+  .add-on__pack {
+    width: 245px;
+  }
+
+  .add-on__price {
+    width: 45px;
+    margin-left: 0;
+  }
+
+  .add-on__button {
+    width: 245px;
+  }
+}

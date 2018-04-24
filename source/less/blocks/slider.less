@@ -32,6 +32,21 @@
   @black);
 }
 
+.slider__button {
+  border-bottom: 1px solid @black;
+  opacity: 0.23;
+}
+
+.slider__button:hover,
+.slider__button:focus {
+  border-bottom: 1px solid @black;
+  opacity: 0.4;
+}
+
+.slider__button:active {
+  border-bottom: none;
+}
+
 @media (min-width: @tablet-width) {
   .slider__button {
     font-size: 20px;

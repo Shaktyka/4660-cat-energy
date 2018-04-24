@@ -22,6 +22,15 @@
   border-top: 1px solid @line-color;
 }
 
+.site-list__link:hover,
+.site-list__link:focus {
+  opacity: 0.6;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
@@ -78,6 +87,15 @@
 
   .site-list__link--desktop {
     color: @black;
+  }
+
+  .site-list__link--desktop:hover,
+  .site-list__link--desktop:focus {
+    opacity: 0.6;
+  }
+
+  .site-list__link--desktop:active {
+    opacity: 0.3;
   }
 
   .site-list__item--active {

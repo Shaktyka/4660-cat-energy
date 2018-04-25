@@ -23,8 +23,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: auto;
     margin: 0;
+  }
+
+  .page-header__logo-wrapper {
+    padding-left: 0;
   }
 
   .page-header__logo {
@@ -32,10 +35,6 @@
     padding-top: 20px;
     padding-bottom: 0;
     .no-decor;
-  }
-
-  .page-header__logo-wrapper {
-    padding-left: 0;
   }
 
   .page-header__logo-image {
@@ -46,8 +45,7 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: auto;
-    margin: 0;
+    margin: 0 auto;
     z-index: 10;
   }
 

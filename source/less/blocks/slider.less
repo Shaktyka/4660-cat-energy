@@ -1,12 +1,8 @@
-.slider {
-  display: flex;
-  flex-direction: column;
-}
-
 .slider__list {
+  display: flex;
+  justify-content: center;
   .ls-none;
   .mp-zero;
-  margin: auto;
   margin-bottom: 36px;
   overflow: hidden;
 }
@@ -29,6 +25,7 @@
 }
 
 .slider__button {
+  padding: 0;
   background-color: transparent;
   .ff-oswald;
   .t-upper;
@@ -50,6 +47,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .slider__list {
+    min-height: 517px;
+    margin-bottom: 5px;
+  }
+
   .slider__button {
     font-size: 20px;
     padding-bottom: 6px;

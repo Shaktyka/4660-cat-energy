@@ -26,6 +26,31 @@
   box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
 }
 
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+
+    top: 12px;
+    left: 2px;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: #222222;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     display: flex;

@@ -51,6 +51,16 @@
   }
 }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     display: flex;

@@ -1,5 +1,6 @@
 .link-button {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-left: -1px;
   .ff-oswald;
   .font(16px;
@@ -10,8 +11,18 @@
   .no-decor;
 }
 
+.link-button:hover {
+  svg {
+    width: 33px;
+  }
+}
+
 .link-button:active {
   opacity: 0.3;
+}
+
+.link-button__icon {
+  margin-left: 12px;
 }
 
 @media (min-width: @tablet-width) {

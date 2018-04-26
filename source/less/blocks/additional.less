@@ -1,12 +1,11 @@
 .additional {
-  outline: 1px dashed blue;
   margin-bottom: 35px;
 }
 
 .additional__title {
   .mp-zero;
   padding-top: 28px;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
   .ff-oswald;
   .font(24px;
   24px;
@@ -18,4 +17,40 @@
   .mp-zero;
   margin-bottom: 39px;
   .ls-none;
+}
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .additional__title {
+    margin-bottom: 75px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional__list {
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {
+  .additional__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .additional__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .additional__action {
+    width: 245px;
+  }
 }

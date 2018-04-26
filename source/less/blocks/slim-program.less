@@ -1,25 +1,120 @@
 .slim-program {
+  box-sizing: border-box;
   padding: 35px 20px 21px 21px;
-  outline: 1px dashed green;
+  background-color: @light-gray;
 }
 
 .slim-program__title {
+  position: relative;
   .mp-zero;
   padding-left: 70px;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 
   .ff-oswald;
   .font(24px;
-  37.02px;
+  26.02px;
   400;
   @black);
   .t-upper;
+}
+
+.slim-program__title::before {
+  position: absolute;
+  content: "";
+  top: -11px;
+  left: 1px;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.slim-program__title::after {
+  position: absolute;
+  content: "";
+  top: -13px;
+  left: 9px;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
 }
 
 .slim-program__description {
   width: 225px;
   .mp-zero;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  margin-left: -1px;
   border-bottom: 1px solid @line-color;
+}
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .slim-program {
+    width: auto;
+    min-height: 371px;
+    padding: 80px 63px 64px 53px;
+  }
+
+  .slim-program__title {
+    padding-left: 0;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .slim-program__description {
+    width: 372px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 0;
+    margin-bottom: 57px;
+    border: none;
+  }
+
+  .slim-program__title::before {
+    top: 10px;
+    left: 393px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .slim-program__title::after {
+    width: 140px;
+    height: 194px;
+    left: 423px;
+    top: -2px;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {
+  .slim-program {
+    width: 570px;
+    padding: 82px 52px 65px 53px;
+  }
+
+  .slim-program__title {
+    padding-left: 164px;
+    margin-bottom: 72px;
+  }
+
+  .slim-program__description {
+    width: 465px;
+    margin-bottom: 35px;
+  }
+
+  .slim-program__title::before {
+    top: -35px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  .slim-program__title::after {
+    width: 70px;
+    height: 97px;
+    left: 15px;
+    top: -40px;
+  }
 }

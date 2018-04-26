@@ -1,7 +1,6 @@
 .page {
-  width: 320px;
+  min-width: 320px;
   .mp-zero;
-  margin: auto;
   background-color: @white;
 
   font-family: "Arial", sans-serif;
@@ -11,4 +10,30 @@
   @dark-gray);
 
   outline: 1px solid #000000;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// временно
+* {
+  outline: 1px solid green;
 }

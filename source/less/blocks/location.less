@@ -1,7 +1,38 @@
 .location {
+  margin: 0 auto;
   background-color: @light-gray;
 }
 
 .location__map {
+  // чтобы убрать отступ под картой
+  display: flex;
+  justify-content: center;
   .mp-zero;
+  background-color: @light-gray;
+}
+
+.location__static-map {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .location {
+    background-color: @white;
+  }
+
+  .location__static-map {
+    width: 100%; //    width: 768px;
+    //    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location__wrapper {
+    position: relative;
+  }
+
+  .location__static-map {
+    width: 1440px;
+    height: 400px;
+  }
 }

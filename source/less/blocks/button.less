@@ -5,18 +5,32 @@
   .t-upper;
   text-align: center;
   vertical-align: middle;
+  .no-decor;
   border: none;
 
   cursor: pointer;
 }
 
 .button--green {
-  padding: 12px 0;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 11px;
+  padding-left: 10px;
   background-color: @green;
   .font(16px;
   20px;
   400;
   @white);
+}
+
+.button--green:hover,
+.button--green:focus {
+  background-color: #5eaa2f;
+}
+
+.button--green:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button--gray {
@@ -26,4 +40,14 @@
   20px;
   400;
   @dark-gray);
+}
+
+.button--gray:hover,
+.button--gray:focus {
+  background-color: #ebebeb;
+}
+
+.button--gray:active {
+  background-color: #ebebeb;
+  color: rgba(68, 68, 68, 0.3);
 }

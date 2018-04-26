@@ -1,13 +1,26 @@
 .page-main__header {
+  box-sizing: border-box;
   .mp-zero;
+  margin: 0 auto;
   padding-top: 19px;
-  padding-right: 20px;
   padding-bottom: 29px;
-  padding-left: 20px;
   .ff-oswald;
   .font(36px;
   60px;
   400;
   @black);
-  outline: 1px dotted red;
+}
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .page-main__header {
+    width: auto;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {
+  .page-main__header {
+    width: auto;
+  }
 }

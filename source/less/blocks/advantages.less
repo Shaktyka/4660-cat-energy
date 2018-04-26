@@ -1,28 +1,225 @@
-.advantages {
-  background-color: bisque;
-}
-
 .advantages__title {
   .mp-zero;
   .ff-oswald;
   .font(36px;
-  60px;
+  54px;
   400;
   @black);
-  margin-bottom: 23px;
+  margin-bottom: 36px;
 }
 
 .advantages__list {
   .mp-zero;
   .ls-none;
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 
 .advantages__item {
+  position: relative;
   padding-left: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
-.advantages__item:last-child {
-  margin-bottom: 0;
+.advantages__item::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.advantages__item--nutrient::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--instant::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--change::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--fast::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+}
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .advantages {
+    border-bottom: 1px solid @line-color;
+    margin-bottom: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .advantages__item {
+    box-sizing: border-box;
+    width: 324px;
+    min-height: 225px;
+    padding-left: 0;
+    padding-top: 117px;
+    padding-right: 79px;
+    margin-bottom: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .advantages__item:nth-child(1) {
+    margin-bottom: 88px;
+  }
+
+  .advantages__item:nth-child(2) {
+    margin-bottom: 88px;
+  }
+
+  .advantages__item::before {
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+  }
+
+  .advantages__item--nutrient::after {
+    top: 13px;
+    left: 13px;
+  }
+
+  .advantages__item--instant::after {
+    top: 13px;
+    left: 13px;
+  }
+
+  .advantages__item--change::after {
+    top: 13px;
+    left: 13px;
+  }
+
+  .advantages__item--fast::after {
+    top: 13px;
+    left: 13px;
+  }
+
+  .advantages__text-number {
+    position: relative;
+    .mp-zero;
+  }
+
+  .advantages__text-number--one::after {
+    position: absolute;
+    content: "\0031";
+    top: -157px;
+    right: 15px;
+    .ff-oswald;
+    .font (281.07px;
+    281.07px;
+    400;
+    @light-gray);
+    z-index: -1;
+  }
+
+  .advantages__text-number--two::after {
+    position: absolute;
+    content: "\0032";
+    top: -157px;
+    right: -10px;
+    .ff-oswald;
+    .font (281.07px;
+    281.07px;
+    400;
+    @light-gray);
+    z-index: -1;
+  }
+
+  .advantages__text-number--three::after {
+    position: absolute;
+    content: "\0033";
+    top: -157px;
+    right: -5px;
+    .ff-oswald;
+    .font (281.07px;
+    281.07px;
+    400;
+    @light-gray);
+    z-index: -1;
+  }
+
+  .advantages__text-number--four::after {
+    position: absolute;
+    content: "\0034";
+    top: -157px;
+    right: -5px;
+    .ff-oswald;
+    .font (281.07px;
+    281.07px;
+    400;
+    @light-gray);
+    z-index: -1;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {
+  .advantages__title {
+    font-size: 60px;
+    margin-bottom: 63px;
+  }
+
+  .advantages__list {
+    min-height: 228px;
+    margin-bottom: 0;
+  }
+
+  .advantages__item {
+    box-sizing: border-box;
+    width: 245px;
+    padding-right: 0;
+    padding-top: 118px;
+    margin-bottom: 0;
+  }
+
+  .advantages__item:nth-child(1) {
+    margin-bottom: 0;
+  }
+
+  .advantages__item:nth-child(2) {
+    margin-bottom: 0;
+  }
 }

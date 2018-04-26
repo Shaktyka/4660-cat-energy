@@ -1,7 +1,15 @@
 .slider__list {
+  display: flex;
+  justify-content: center;
   .ls-none;
   .mp-zero;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
+  overflow: hidden;
+}
+
+.slider__item {
+  //чтобы убрать отступ под изображением
+  display: flex;
 }
 
 .slider__item--not-active {
@@ -17,6 +25,7 @@
 }
 
 .slider__button {
+  padding: 0;
   background-color: transparent;
   .ff-oswald;
   .t-upper;
@@ -24,4 +33,28 @@
   20px;
   400;
   @black);
+}
+
+.slider__button:hover,
+.slider__button:focus {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(17, 17, 17, 0.4);
+}
+
+.slider__button:active {
+  border-bottom: none;
+}
+
+@media (min-width: @tablet-width) {
+  .slider__list {
+    min-height: 517px;
+    margin-bottom: 5px;
+  }
+
+  .slider__button {
+    font-size: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #bebebe;
+  }
 }

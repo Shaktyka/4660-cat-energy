@@ -1,9 +1,44 @@
 .link-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  margin-left: -1px;
   .ff-oswald;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  color: @black;
+  .font(16px;
+  16px;
+  400;
+  @black);
   .t-upper;
+  .no-decor;
+}
+
+.link-button:hover {
+  svg {
+    width: 33px;
+  }
+}
+
+.link-button:active {
+  opacity: 0.3;
+}
+
+.link-button__icon {
+  margin-left: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .link-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .link-button__icon {
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .link-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

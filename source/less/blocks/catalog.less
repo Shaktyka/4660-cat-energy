@@ -2,3 +2,41 @@
   .mp-zero;
   .ls-none;
 }
+
+.catalog__item {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 324px;
+    min-height: 513px;
+    margin-bottom: 58px;
+  }
+
+  .catalog__button {
+    width: 249px;
+    margin: 0 auto;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {
+  .catalog__item {
+    width: 245px;
+  }
+
+  .catalog__button {
+    width: 170px;
+    margin: 0 auto;
+  }
+}

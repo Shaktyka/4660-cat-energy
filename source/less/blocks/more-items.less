@@ -2,9 +2,14 @@
   .center;
   padding-top: 82px;
   padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .more-items__show {
+  position: relative;
   .mp-zero;
   margin-bottom: 10px;
   .ff-oswald;
@@ -15,6 +20,18 @@
   @black);
 }
 
+.more-items__show::before {
+  position: absolute;
+  content: "";
+  top: -57px;
+  left: 125px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
 .more-items__text {
   .mp-zero;
   margin-bottom: 20px;
@@ -22,4 +39,43 @@
   16px;
   400;
   @dark-gray);
+}
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .more-items {
+    box-sizing: border-box;
+    padding-top: 165px;
+    border: 1px solid #e6e6e6;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .more-items__show {
+    width: 135px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    font-size: 20px;
+  }
+
+  .more-items__show::before {
+    top: -110px;
+    left: 36px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .more-items__text {
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {
+  .more-items__text {
+    margin: 0 auto;
+    margin-bottom: 85px;
+  }
 }

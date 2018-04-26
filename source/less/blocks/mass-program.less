@@ -1,25 +1,120 @@
 .mass-program {
+  box-sizing: border-box;
   padding: 35px 20px 21px 21px;
-  outline: 1px dashed green;
+  background-color: @light-gray;
 }
 
 .mass-program__title {
+  position: relative;
   .mp-zero;
   padding-left: 70px;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 
   .ff-oswald;
   .font(24px;
-  37.02px;
+  26.02px;
   400;
   @black);
   .t-upper;
+}
+
+.mass-program__title::before {
+  position: absolute;
+  content: "";
+  top: -11px;
+  left: 1px;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.mass-program__title::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -8px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
 }
 
 .mass-program__description {
   width: 225px;
   .mp-zero;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  margin-left: -1px;
   border-bottom: 1px solid @line-color;
+}
+
+// Планшет
+@media (min-width: @tablet-width) {
+  .mass-program {
+    width: auto;
+    min-height: 371px;
+    padding: 79px 63px 64px 53px;
+  }
+
+  .mass-program__title {
+    padding-left: 0;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .mass-program__description {
+    width: 343px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 0;
+    margin-bottom: 57px;
+    border: none;
+  }
+
+  .mass-program__title::before {
+    top: 9px;
+    left: 395px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .mass-program__title::after {
+    width: 268px;
+    height: 112px;
+    left: 359px;
+    top: 53px;
+  }
+}
+
+// Десктоп
+@media (min-width: @desktop-width) {
+  .mass-program {
+    width: 570px;
+    padding: 82px 73px 65px 52px;
+  }
+
+  .mass-program__title {
+    padding-left: 164px;
+    margin-bottom: 72px;
+  }
+
+  .mass-program__description {
+    width: 447px;
+    margin-bottom: 35px;
+  }
+
+  .mass-program__title::before {
+    top: -35px;
+    left: -3px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .mass-program__title::after {
+    width: 134px;
+    height: 56px;
+    left: -20px;
+    top: -10px;
+  }
 }

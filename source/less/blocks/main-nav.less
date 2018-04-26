@@ -7,11 +7,23 @@
   position: absolute;
   top: -47px;
   right: 0;
+  z-index: 12;
+
   width: 26px;
   height: 26px;
-  background-color: greenyellow;
-  z-index: 12;
-  border: none;
+  background-color: transparent;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 2px;
+
+  width: 24px;
+  height: 2px;
+  background-color: #222222;
+  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
 }
 
 @media (min-width: @tablet-width) {

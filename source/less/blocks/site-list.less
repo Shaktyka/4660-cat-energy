@@ -9,14 +9,17 @@
   500;
   @black);
   .t-upper;
-
-  border-bottom: 1px solid @line-color;
 }
 
 .site-list__item {
   margin-left: -20px;
   margin-right: -20px;
 }
+
+.site-list__item:last-child {
+  border-bottom: 1px solid @line-color;
+}
+
 
 .site-list__link {
   display: block;

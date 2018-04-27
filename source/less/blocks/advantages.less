@@ -78,7 +78,7 @@
 @media (min-width: @tablet-width) {
   .advantages {
     border-bottom: 1px solid @line-color;
-    margin-bottom: 53px;
+    margin-bottom: 0;
   }
 
   .advantages__title {
@@ -94,6 +94,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    margin-bottom: 97px;
   }
 
   .advantages__item {
@@ -205,13 +206,18 @@
 
 // Десктоп
 @media (min-width: @desktop-width) {
+  .advantages {
+    margin-bottom: 77px;
+    border-bottom: none;
+  }
+
   .advantages__title {
     font-size: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 36px;
   }
 
   .advantages__list {
-    min-height: 228px;
+    //    min-height: 228px;
     margin-bottom: 0;
   }
 
@@ -229,5 +235,25 @@
 
   .advantages__item:nth-child(2) {
     margin-bottom: 0;
+  }
+
+  .advantages__text-number {
+    padding-top: 29px;
+  }
+
+  .advantages__text-number--one::after {
+    top: -122px;
+  }
+
+  .advantages__text-number--two::after {
+    top: -122px;
+  }
+
+  .advantages__text-number--three::after {
+    top: -122px;
+  }
+
+  .advantages__text-number--four::after {
+    top: -122px;
   }
 }

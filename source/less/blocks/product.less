@@ -83,12 +83,16 @@
     border: none;
   }
 
+  .product__title-caption {
+    margin-bottom: 28px;
+  }
+
   .product__title {
     font-size: 20px;
     width: 130px;
     .center;
     margin: auto;
-    margin-bottom: 28px;
+    margin-bottom: 0; //    margin-bottom: 28px;
   }
 
   .product__wrapper {
@@ -99,9 +103,10 @@
   }
 
   .product__description {
-    margin-bottom: 33px;
-  }
-
+    box-sizing: border-box;
+  } //  .product__features {
+  //    height: 100px;
+  //  }
   .product__link {
     .center;
     .no-decor;
@@ -115,6 +120,10 @@
   .product__feature {
     font-size: 16px;
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__unit {
+    //    padding: 3px 5px 3px 0;
   }
 }
 

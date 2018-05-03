@@ -45,10 +45,18 @@
 @media (min-width: @tablet-width) {
   .more-items {
     box-sizing: border-box;
-    padding-top: 165px;
-    border: 1px solid #e6e6e6;
     margin-left: 0;
     margin-right: 0;
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .more-items__wrapper {
+    padding-top: 165px;
+    padding-bottom: 39px;
+    border: 1px solid #e6e6e6;
   }
 
   .more-items__show {
@@ -59,8 +67,8 @@
   }
 
   .more-items__show::before {
-    top: -110px;
-    left: 36px;
+    top: -109px;
+    left: 38px;
     width: 60px;
     height: 60px;
   }
@@ -68,7 +76,15 @@
   .more-items__text {
     width: 170px;
     margin: 0 auto;
-    margin-bottom: 85px;
+    margin-bottom: 87px;
+    font-size: 16px;
+  }
+
+  .more-items__button {
+    box-sizing: border-box;
+    width: 250px;
+    margin: 0 auto;
+    padding: 11px 10px 9px 10px;
   }
 }
 

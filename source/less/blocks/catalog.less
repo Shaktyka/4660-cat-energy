@@ -15,16 +15,29 @@
 
 // Планшет
 @media (min-width: @tablet-width) {
+  .catalog {
+    margin-bottom: 38px;
+  }
+
   .catalog__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .catalog__item {
     width: 324px;
     margin-bottom: 58px;
+  }
+
+  .catalog__item:nth-child(7) {
+    margin-bottom: 0;
+  }
+
+  .catalog__item:last-child {
+    margin-bottom: 0;
   }
 
   .catalog__button {

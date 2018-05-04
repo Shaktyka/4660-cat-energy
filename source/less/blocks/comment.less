@@ -1,14 +1,29 @@
 .comment__title {
-  width: 142px;
+  display: flex;
+  align-items: center; //width: 142px;
   .mp-zero;
   padding-top: 30px;
   padding-bottom: 35px;
+  margin-right: -20px;
 
   .ff-oswald;
   .font(24px;
   24px;
   400;
   @black);
+}
+
+.comment__title::after {
+  content: "";
+
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 3px;
+  margin-left: 24px;
+
+  background: @green;
 }
 
 .comment__field {

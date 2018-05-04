@@ -3,16 +3,31 @@
 }
 
 .extra__title {
-  width: 165px;
+  display: flex;
+  align-items: center; //width: 165px;
   .mp-zero;
   padding-top: 28px;
   margin-bottom: 40px;
+  margin-right: -20px;
 
   .ff-oswald;
   .font(24px;
   24px;
   400;
   @black);
+}
+
+.extra__title::after {
+  content: "";
+
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 3px;
+  margin-left: 24px;
+
+  background: @green;
 }
 
 .extra__list {

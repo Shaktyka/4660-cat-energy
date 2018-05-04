@@ -1,7 +1,7 @@
 .add-on {
   box-sizing: border-box;
-  padding-top: 14px;
-  padding-bottom: 17px;
+  padding-top: 13px;
+  padding-bottom: 16px;
   border-bottom: 1px solid @line-gray;
 }
 
@@ -11,7 +11,7 @@
 
 .add-on__title {
   .mp-zero;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   .ff-oswald;
   .t-upper;
   .font(16px;
@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   .mp-zero;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   line-height: 14px;
 }
 
@@ -58,19 +58,24 @@
   .add-on__price {
     margin-left: 52px;
   }
+
+  .add-on__button {
+    margin: 0 auto;
+  }
 }
 
 // Десктоп
 @media (min-width: @desktop-width) {
   .add-on {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 895px;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 16px;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 1px;
+    padding-right: 0;
   }
 
   .add-on__wrapper {
@@ -80,14 +85,18 @@
 
   .add-on__pack {
     width: 245px;
+    margin-top: 4px;
   }
 
   .add-on__price {
     width: 45px;
     margin-left: 0;
+    margin-top: 4px;
   }
 
   .add-on__button {
+    box-sizing: border-box;
     width: 245px;
+    margin-left: 39px;
   }
 }

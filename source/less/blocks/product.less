@@ -1,9 +1,12 @@
 .product {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 1px;
+
   padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: -20px;
-  margin-right: -20px;
+
   border-bottom: 1px solid @line-color;
 }
 
@@ -16,22 +19,24 @@
 }
 
 .product__image {
+  display: block;
   width: 140px;
   height: 144px;
+
   outline: 1px dashed orange;
 }
 
 .product__description {
   width: 100%;
   .mp-zero;
-  margin-top: 23px;
+  margin-top: 19px;
   border-collapse: collapse;
 }
 
 .product__title {
   width: 80px;
   .mp-zero;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 
   .ff-oswald;
   .t-upper;
@@ -65,17 +70,23 @@
   .product {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 0;
     padding-bottom: 40px;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 58px;
     border: none;
     background-image: linear-gradient(white 82px, @light-gray 82px);
+    outline: 1px solid orange;
   }
 
   .product:first-child {
     border: none;
+  }
+
+  .product__title-caption {
+    margin-bottom: 20px;
   }
 
   .product__title {
@@ -83,33 +94,54 @@
     width: 130px;
     .center;
     margin: auto;
-    margin-bottom: 28px;
+    margin-bottom: 0;
   }
 
   .product__wrapper {
     flex-direction: column;
+    align-items: center;
     width: 249px;
     margin: auto;
   }
 
   .product__description {
-    margin-bottom: 33px;
+    box-sizing: border-box;
+    margin-bottom: 34px;
   }
 
   .product__link {
-    height: 208px;
     .center;
+    margin-bottom: 20px;
     .no-decor;
+  }
+
+  .product__image {
+    width: 195px;
+    height: 208px;
   }
 
   .product__feature {
     font-size: 16px;
     border-bottom: 1px solid #cdcdcd;
   }
+
+  .product__unit {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .product__value {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
 }
 
 // Десктоп
 @media (min-width: @desktop-width) {
+  .product {
+    margin-bottom: 60px;
+  }
+
   .product__wrapper {
     width: 170px;
   }

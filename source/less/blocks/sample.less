@@ -24,19 +24,56 @@
   margin-bottom: 34px;
 }
 
+//Планшет
 @media (min-width: @tablet-width) {
   .sample {
     background-image: linear-gradient(to bottom, @white 618px, @light-gray 618px);
+    padding-bottom: 68px;
   }
 
   .sample__title {
+    margin-bottom: 64px;
+    padding-top: 43px;
+
     font-size: 60px;
-    margin-bottom: 60px;
+    line-height: 60px;
   }
 
   .sample__description {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .sample {
+    padding-bottom: 0;
+  }
+
+  .sample__content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sample__title {
+    padding-top: 44px;
+    margin-bottom: 129px;
+  }
+
+  .sample__text-wrapper {
+    width: 570px;
+  }
+
+  .sample__description {
+    width: 432px;
+    margin-bottom: 69px;
+  }
+
+  .sample__results {
+    width: 610px; //    height: 653px;
+    margin-top: -245px;
   }
 }

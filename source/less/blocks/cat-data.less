@@ -1,4 +1,38 @@
+.cat-data {
+  padding-top: 23px;
+  padding-bottom: 25px;
+}
+
 .cat-data__list {
   .mp-zero;
   .ls-none;
+}
+
+.cat-data__field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cat-data__field .form__label {
+  margin-right: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-data {
+    padding-top: 41px;
+    padding-bottom: 22px;
+    margin-bottom: 50px;
+  }
+
+  .cat-data__field {
+    margin-bottom: 20px;
+  }
 }

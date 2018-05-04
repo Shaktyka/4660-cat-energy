@@ -14,6 +14,7 @@
   margin-bottom: 20px;
 }
 
+//Планшет
 @media (min-width: @tablet-width) {
   .programs {
     background: none;
@@ -21,7 +22,7 @@
 
   .programs__header {
     padding-top: 62px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .programs__item {
@@ -29,6 +30,7 @@
   }
 }
 
+//Десктоп
 @media (min-width: @desktop-width) {
   .programs {
     background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(@green 305px, transparent 305px);
@@ -36,6 +38,7 @@
     background-size: 720px 696px;
     background-position: right top;
     margin-top: -110px;
+    margin-bottom: 31px;
   }
 
   .programs__wrapper {
@@ -43,8 +46,8 @@
   }
 
   .programs__header {
-    min-height: 558px;
-    margin-bottom: 80px;
+    //    min-height: 558px;
+    margin-bottom: 106px;
   }
 
   .programs__list {

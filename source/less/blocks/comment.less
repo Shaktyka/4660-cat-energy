@@ -1,9 +1,54 @@
 .comment__title {
-  width: 142px;
+  display: flex;
+  align-items: center; //width: 142px;
   .mp-zero;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  margin-right: -20px;
+
   .ff-oswald;
   .font(24px;
   24px;
   400;
   @black);
+}
+
+.comment__title::after {
+  content: "";
+
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 3px;
+  margin-left: 24px;
+
+  background: @green;
+}
+
+.comment__field {
+  display: block;
+  box-sizing: border-box;
+  height: 150px;
+  padding: 11px 10px 15px 15px;
+
+  .ff-oswald;
+  .t-upper;
+  .font(16px;
+  18px;
+  400;
+  @dark-gray);
+}
+
+@media (min-width: @tablet-width) {
+  .comment__title {
+    margin-right: -67px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .comment__title::after {
+    margin-left: 42px;
+  }
 }

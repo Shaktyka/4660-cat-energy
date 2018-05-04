@@ -15,8 +15,8 @@
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина 'Cat Energy'">
       </a>
     </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+    <nav class="main-nav main-nav--opened">
+      <button class="button main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--desktop" href="index.html">Главная</a>
@@ -44,6 +44,7 @@
               <caption class="product__title-caption">
                 <h3 class="product__title">Cat Energy Pro 500 г</h3>
               </caption>
+              <tbody class="product__features">
               <tr class="product__feature">
                 <td class="product__unit">Объём</td>
                 <td class="product__value">500 г</td>
@@ -56,6 +57,7 @@
                 <td class="product__unit">Цена</td>
                 <td class="product__value">700 P.</td>
               </tr>
+              </tbody>
             </table>
           </div>
           <a class="catalog__button button button--green" href="#">Заказать</a>
@@ -211,6 +213,7 @@
           <a class="catalog__button button button--green" href="#">Заказать</a>
         </li>
         <li class="catalog__item more-items">
+          <div class="more-items__wrapper">
           <p class="more-items__show">
             Показать ещё 100500 товаров
           </p>
@@ -218,6 +221,7 @@
             На самом деле вкусов гораздо больше!
           </p>
           <a class="more-items__button button button--gray" href="#">Показать все</a>
+          </div>
         </li>
       </ul>
       </section>
@@ -231,7 +235,7 @@
             <h3 class="add-on__title">Сахарозаменитель</h3>
             <p class="add-on__info">
               <span class="add-on__pack">1 упаковка (100 г)</span>
-              <span class="add-on__price">100 р.</span>
+              <span class="add-on__price">100 Р.</span>
             </p>
             </div>
             <a class="add-on__button button button--green" href="#">Заказать</a>
@@ -241,7 +245,7 @@
             <h3 class="add-on__title">Питьевая вода</h3>
             <p class="add-on__info">
               <span class="add-on__pack">5 литров</span>
-              <span class="add-on__price">50 р.</span>
+              <span class="add-on__price">50 Р.</span>
             </p>
             </div>
             <a class="add-on__button button button--green" href="#">Заказать</a>
@@ -251,7 +255,7 @@
             <h3 class="add-on__title">Молоко</h3>
             <p class="add-on__info">
               <span class="add-on__pack">1 литр</span>
-              <span class="add-on__price">100 р.</span>
+              <span class="add-on__price">100 Р.</span>
             </p>
             </div>
             <a class="add-on__button button button--green" href="#">Заказать</a>
@@ -261,7 +265,7 @@
             <h3 class="add-on__title">Витамины</h3>
             <p class="add-on__info">
               <span class="add-on__pack">1 упаковка (30 г)</span>
-              <span class="add-on__price">300 р.</span>
+              <span class="add-on__price">300 Р.</span>
             </p>
             </div>
             <a class="add-on__button button button--green" href="#">Заказать</a>
@@ -271,7 +275,7 @@
         <section class="additional__action offer">
           <h2 class="visually-hidden">Специальное предложение</h2>
           <p class="offer__slogan">
-            Закажите все<br> и получите чехол для кота в подарок!
+            Закажите все<br> и получите чехол&nbsp;для кота в подарок!
           </p>
         </section>
       </div>
@@ -284,10 +288,11 @@
         <aside class="location__info contacts contacts--inner">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__invite">
-            Приглашаем к сотрудничеству дилеров!
+            Приглашаем к&nbsp;сотрудничеству дилеров!
           </p>
           <p class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            <span class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__address-city">Санкт-Петербург</span>
           </p>
         </aside>
       </div>

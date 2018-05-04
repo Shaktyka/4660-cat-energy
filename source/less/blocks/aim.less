@@ -1,15 +1,32 @@
 .aim {
   margin-left: -20px;
   margin-right: -20px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  border: 1px solid #ededed;
+  padding-top: 26px;
+  padding-bottom: 28px;
+  border: 1px solid #ededed; //  background-color: antiquewhite;
 }
 
 .aim__list {
   .mp-zero;
-  padding-left: 46px;
+  padding-left: 20px;
+  padding-right: 20px;
   .ls-none;
+}
+
+.aim__option {
+  margin-bottom: 24px;
+  padding-left: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.aim__option .form__label {
+  position: relative;
+  display: block;
+
+  cursor: pointer;
 }
 
 // Планшет
@@ -17,5 +34,13 @@
   .aim {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 58px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  .aim__option {
+    margin-bottom: 33px;
+    padding-left: 67px;
   }
 }

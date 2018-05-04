@@ -15,8 +15,8 @@
       <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина 'Cat Energy'">
     </a>
     </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+    <nav class="main-nav main-nav--opened">
+      <button class="button main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--desktop" href="index.html ">Главная</a>
@@ -32,7 +32,7 @@
   </header>
   <main class="page-main">
     <div class="container">
-    <h1 class="page-main__header container">Подбор программы</h1>
+    <h1 class="page-main__header page-main__header--form container">Подбор программы</h1>
     <section class="questionary">
       <div class="questionary__wrapper">
         <h2 class="visually-hidden">Форма для выбора программы</h2>
@@ -45,21 +45,19 @@
             <ul class="cat-data__list">
               <li class="cat-data__field">
                 <label class="form__label" for="cat-name">
-                  Имя:
-                <sup>*</sup>
+                  Имя:&nbsp;<sup>*</sup>
                 </label>
                 <input class="text-input" type="text" name="cat-name-field" id="cat-name" placeholder="Барсик" required>
               </li>
               <li class="cat-data__field">
                 <label class="form__label" for="cat-weight">
-                  Вес (кг):
-                  <sup>*</sup>
+                  Вес&nbsp;(кг):&nbsp;<sup>*</sup>
                 </label>
                 <input class="text-input" type="number" name="cat-weight-field" id="cat-weight" placeholder="7" required>
               </li>
               <li class="cat-data__field">
                 <label class="form__label" for="cat-age">
-                  Возраст (лет):
+                  Возраст&nbsp;(лет):
                 </label>
                 <input class="text-input" type="number" name="cat-age-field" id="cat-age" placeholder="7">
               </li>
@@ -93,17 +91,15 @@
             <ul class="owner-data__list">
               <li class="owner-data__field">
                 <label class="form__label" for="user-email">
-                email:
-                <sup>*</sup>
+                email:&nbsp;<sup>*</sup>
                 </label>
                 <input class="text-input form__email" type="email" name="email-field" id="user-email" placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="owner-data__field">
                 <label class="form__label" for="user-phone">
-                Телефон:
-                <sup>*</sup>
+                Телефон:&nbsp;<sup>*</sup>
                 </label>
-                <input class="text-input form__phone" type="tel" name="phone-field" id="user-phone" placeholder="8(960)60-90" required>
+                <input class="text-input form__phone" type="tel" name="phone-field" id="user-phone" placeholder="8(960)900-60-90" required>
               </li>
             </ul>
           </fieldset>
@@ -149,7 +145,7 @@
         <aside class="location__info contacts contacts--inner">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__invite">
-            Приглашаем к сотрудничеству дилеров!
+            Приглашаем к&nbsp;сотрудничеству дилеров!
           </p>
           <p class="contacts__address">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург

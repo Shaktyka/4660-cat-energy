@@ -46,15 +46,35 @@
   border-bottom: none;
 }
 
+//Планшет
 @media (min-width: @tablet-width) {
   .slider__list {
     min-height: 517px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
 
   .slider__button {
     font-size: 20px;
     padding-bottom: 6px;
     border-bottom: 1px dotted #bebebe;
+  }
+
+  .slider__range {
+    width: 570px;
+  }
+
+  .slider__bar {
+    width: 428px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .slider {
+    background-color: lightyellow;
+  }
+
+  .slider__list {
+    //   width: ;
   }
 }

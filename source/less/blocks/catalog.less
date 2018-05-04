@@ -8,22 +8,40 @@
   margin: 0 auto;
 }
 
+.catalog__button {
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
 // Планшет
 @media (min-width: @tablet-width) {
+  .catalog {
+    margin-bottom: 38px;
+  }
+
   .catalog__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .catalog__item {
     width: 324px;
-    min-height: 513px;
     margin-bottom: 58px;
   }
 
+  .catalog__item:nth-child(7) {
+    margin-bottom: 0;
+  }
+
+  .catalog__item:last-child {
+    margin-bottom: 0;
+  }
+
   .catalog__button {
+    box-sizing: border-box;
     width: 249px;
     margin: 0 auto;
   }
@@ -31,8 +49,20 @@
 
 // Десктоп
 @media (min-width: @desktop-width) {
+  .catalog {
+    margin-bottom: 46px;
+  }
+
   .catalog__item {
     width: 245px;
+  }
+
+  .catalog__item:nth-child(5) {
+    margin-bottom: 0;
+  }
+
+  .catalog__item:nth-child(6) {
+    margin-bottom: 0;
   }
 
   .catalog__button {

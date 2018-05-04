@@ -37,7 +37,8 @@
 
 .extra__option {
   padding-left: 45px;
-  margin-bottom: 24px; //outline: 1px dashed gray;
+  margin-bottom: 24px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -49,4 +50,17 @@
 
   cursor: pointer;
   user-select: none;
+}
+
+@media (min-width: @tablet-width) {
+  .extra__title {
+    margin-right: -67px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .extra__title::after {
+    margin-left: 42px;
+  }
 }

@@ -1,0 +1,25 @@
+.form-input-checkbox + .form__label::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -46px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #cdcdcd;
+}
+
+.form-input-checkbox:checked + .form__label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -41px;
+
+  width: 21px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

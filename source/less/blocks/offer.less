@@ -4,8 +4,13 @@
   background-color: @green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 280px auto;
   background-position: center top;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 }
 
 .offer__slogan {
@@ -38,8 +43,15 @@
     min-height: 200px;
     padding-top: 72px;
     padding-bottom: 68px;
-    background-size: cover;
-    background-position: 50% 65%;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 708px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .offer__slogan {
@@ -59,7 +71,15 @@
   .offer {
     padding-top: 186px;
     padding-bottom: 43px;
-    background-size: cover;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 245px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .offer__slogan {

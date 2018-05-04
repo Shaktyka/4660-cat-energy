@@ -301,8 +301,12 @@
         </aside>
       </div>
       <p class="location__map">
-          <img class="location__static-map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Cat Energy: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        </p>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="location__static-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Cat Energy: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
+      </p>
     </section>
   </main>
   <!-- Футер -->

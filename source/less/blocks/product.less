@@ -18,12 +18,13 @@
   display: flex;
 }
 
-.product__image {
-  display: block;
+.product__link {
   width: 140px;
   height: 144px;
+}
 
-  outline: 1px dashed orange;
+.product__image {
+  display: block;
 }
 
 .product__description {
@@ -78,7 +79,6 @@
     margin-bottom: 58px;
     border: none;
     background-image: linear-gradient(white 82px, @light-gray 82px);
-    outline: 1px solid orange;
   }
 
   .product:first-child {
@@ -110,14 +110,17 @@
   }
 
   .product__link {
+    box-sizing: border-box;
     .center;
     margin-bottom: 20px;
     .no-decor;
+
+    width: 324px;
+    height: 208px;
   }
 
-  .product__image {
-    width: 195px;
-    height: 208px;
+  .product__link--odd {
+    padding-top: 36px;
   }
 
   .product__feature {
@@ -147,7 +150,12 @@
   }
 
   .product__link {
+    width: 245px;
     height: 208px;
+  }
+
+  .product__link--odd {
+    padding-top: 34px;
   }
 
   .product__feature {

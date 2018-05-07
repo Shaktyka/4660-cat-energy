@@ -1,4 +1,5 @@
 .page {
+  //position: relative;
   min-width: 320px;
   .mp-zero;
   background-color: @white;
@@ -31,6 +32,20 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: @desktop-width) {
+  .page {
+    //    position: absolute;
+    //    content: "";
+    //    top: 0;
+    //    right: 0;
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(@green 305px, transparent 305px);
+    background-repeat: no-repeat;
+    background-size: 720px auto;
+    background-position: right top;
+    z-index: -1;
+  }
 }
 
 // временно

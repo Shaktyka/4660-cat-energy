@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .programs__header {
@@ -21,7 +26,7 @@
   }
 
   .programs__header {
-    padding-top: 62px;
+    padding-top: 54px;
     margin-bottom: 0;
   }
 
@@ -33,12 +38,9 @@
 //Десктоп
 @media (min-width: @desktop-width) {
   .programs {
-    background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(@green 305px, transparent 305px);
-    background-repeat: no-repeat;
-    background-size: 720px 696px;
-    background-position: right top;
+    background: none;
     margin-top: -110px;
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
 
   .programs__wrapper {
@@ -46,8 +48,7 @@
   }
 
   .programs__header {
-    //    min-height: 558px;
-    margin-bottom: 106px;
+    margin-bottom: 101px;
   }
 
   .programs__list {

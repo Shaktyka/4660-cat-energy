@@ -3,7 +3,7 @@
   justify-content: center;
   .ls-none;
   .mp-zero;
-  margin-bottom: 33px;
+  margin-bottom: 28px;
   overflow: hidden;
 }
 
@@ -50,7 +50,11 @@
 @media (min-width: @tablet-width) {
   .slider__list {
     min-height: 517px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
+  }
+
+  .slider__item {
+    padding-left: 15px;
   }
 
   .slider__button {
@@ -71,10 +75,19 @@
 //Десктоп
 @media (min-width: @desktop-width) {
   .slider {
-    background-color: lightyellow;
+    margin-bottom: 0;
   }
 
   .slider__list {
-    //   width: ;
+    margin-bottom: 38px;
+    min-height: 0;
+  }
+
+  .slider__item {
+    padding-left: 79px;
+  }
+
+  .slider__range {
+    margin-left: 79px;
   }
 }

@@ -8,6 +8,8 @@
   display: flex;
   justify-content: center;
   .mp-zero;
+  height: 362px;
+  overflow: hidden;
   background-color: @light-gray;
 }
 
@@ -21,7 +23,7 @@
     background-color: @white;
   }
 
-  .location__static-map {
+  .location__map {
     height: 396px;
   }
 }
@@ -30,6 +32,10 @@
 @media (min-width: @desktop-width) {
   .location__wrapper {
     position: relative;
+  }
+
+  .location__map {
+    height: 400px;
   }
 
   .location__static-map {

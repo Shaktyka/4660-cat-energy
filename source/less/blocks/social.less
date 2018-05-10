@@ -1,16 +1,16 @@
 .social__list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 280px;
   .mp-zero;
-  padding: 19px 0 18px 0;
+  padding: 23px 0 21px 73px;
   .ls-none;
   border-top: 1px solid @line-color;
   border-bottom: 1px solid @line-color;
 }
 
 .social__item {
-  margin-right: 29px;
+  margin-right: 38px;
 }
 
 .social__item:last-child {
@@ -26,24 +26,27 @@
   .no-decor;
 }
 
-//.social__link--vkontakte {
-//  background-image: url("../img/icon-vk-mobile.svg");
-//  background-repeat: no-repeat;
-//  background-position: left center;
-//  background-size: 20px 20px;
-//}
-//.social__link--instagram {
-//  background-image: url("../img/icon-insta-mobile.svg");
-//  background-repeat: no-repeat;
-//  background-position: 50% 65%;
-//  background-size: 15px 15px;
-//}
-//.social__link--facebook {
-//  background-image: url("../img/icon-fb-mobile.svg");
-//  background-repeat: no-repeat;
-//  background-position: 40% 50%;
-//  background-size: 15px 19px;
-//}
+.social__link--vkontakte,
+.social__link--instagram,
+.social__link--facebook {
+  fill: #666666;
+}
+
+.social__link--vkontakte:hover,
+.social__link--vkontakte:focus,
+.social__link--instagram:hover,
+.social__link--instagram:focus,
+.social__link--facebook:hover,
+.social__link--facebook:focus {
+  fill: @green;
+}
+
+.social__link--vkontakte:active,
+.social__link--instagram:active,
+.social__link--facebook:active {
+  opacity: 0.3;
+}
+
 //Планшет
 @media (min-width: @tablet-width) {
   .social {
@@ -65,23 +68,21 @@
   .social__link {
     width: 32px;
     height: 30px;
-  }
-
-  .social__link--vkontakte {
-    background-position: 100% top;
-    background-size: 28px 30px;
-  }
-
-  .social__link--instagram {
-    background-position: 50% center;
-    background-size: 32px 24px;
-    margin-right: -10px;
-  }
-
-  .social__link--facebook {
-    background-position: center center;
-    background-size: 20px 28px;
-  }
+  } //  .social__link--vkontakte {
+  //    background-position: 100% top;
+  //    background-size: 28px 30px;
+  //  }
+  //
+  //  .social__link--instagram {
+  //    background-position: 50% center;
+  //    background-size: 32px 24px;
+  //    margin-right: -10px;
+  //  }
+  //
+  //  .social__link--facebook {
+  //    background-position: center center;
+  //    background-size: 20px 28px;
+  //  }
 }
 
 //Десктоп

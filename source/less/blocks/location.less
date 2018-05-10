@@ -4,13 +4,30 @@
 }
 
 .location__map {
-  // чтобы убрать отступ под картой
+  position: relative;
   display: flex;
   justify-content: center;
   .mp-zero;
   height: 362px;
   overflow: hidden;
   background-color: @light-gray;
+}
+
+.location__map::before {
+  position: absolute;
+  content: "";
+
+  top: 0;
+  left: 0;
+
+  width: 124px;
+  height: 106px;
+
+  background-image: url("../img/map-pin.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  z-index: 5;
 }
 
 .location__static-map {

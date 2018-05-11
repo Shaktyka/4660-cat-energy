@@ -17,15 +17,15 @@
   position: absolute;
   content: "";
 
-  top: 0;
-  left: 0;
+  top: 139px;
+  left: 137px;
 
-  width: 124px;
-  height: 106px;
+  width: 62px;
+  height: 53px;
 
   background-image: url("../img/map-pin.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-size: 62px 53px;
 
   z-index: 5;
 }
@@ -43,6 +43,14 @@
   .location__map {
     height: 396px;
   }
+
+  .location__map::before {
+    width: 113px;
+    height: 106px;
+    background-size: 113px 106px;
+    top: 148px;
+    left: 339px;
+  }
 }
 
 //Десктоп
@@ -58,5 +66,10 @@
   .location__static-map {
     width: 1440px;
     height: 400px;
+  }
+
+  .location__map::before {
+    top: 151px;
+    left: 939px;
   }
 }

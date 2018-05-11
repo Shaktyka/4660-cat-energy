@@ -37,6 +37,7 @@
   opacity: 0.3;
 }
 
+//Планшет
 @media (min-width: @tablet-width) {
   .copyright {
     padding: 0;
@@ -48,5 +49,16 @@
 
   .copyright__link {
     margin-bottom: 3px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .copyright__img {
+    padding-top: 7px;
+  }
+
+  .copyright__link {
+    margin-bottom: 0;
   }
 }

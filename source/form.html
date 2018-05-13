@@ -150,13 +150,13 @@
                 <label class="form__label" for="cat-weight">
                   Вес&nbsp;(кг):<sup>*</sup>
                 </label>
-                <input class="text-input" type="number" name="cat-weight-field" id="cat-weight" placeholder="7" required>
+                <input class="text-input" type="number" name="cat-weight-field" id="cat-weight" placeholder="7" min="0" max="50" step="1" required>
               </li>
               <li class="cat-data__field">
                 <label class="form__label" for="cat-age">
                   Возраст&nbsp;(лет):
                 </label>
-                <input class="text-input" type="number" name="cat-age-field" id="cat-age" placeholder="7">
+                <input class="text-input" type="number" name="cat-age-field" id="cat-age" placeholder="7" min="0" max="25" step="1">
               </li>
             </ul>
           </fieldset>

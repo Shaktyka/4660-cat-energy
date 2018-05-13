@@ -3,15 +3,32 @@
 }
 
 .additional__title {
+  display: inline-flex;
+  position: relative;
   .mp-zero;
   padding-top: 29px;
   margin-bottom: 34px;
+  margin-right: -20px;
+  min-width: 225px;
 
   .ff-oswald;
   .font(24px;
   24px;
   400;
   @black);
+}
+
+.additional__title::after {
+  display: inline-flex;
+  position: absolute;
+  content: "";
+  top: 42px;
+  left: calc(100% + 12px);
+
+  width: 100vw;
+  height: 3px;
+
+  background-color: @green;
 }
 
 .additional__list {

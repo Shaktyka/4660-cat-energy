@@ -16,36 +16,6 @@
   display: none;
 }
 
-.slider__range {
-  display: flex;
-  justify-content: space-between;
-  width: 197px;
-  margin: 0 auto;
-  outline: 1px solid orange;
-}
-
-.slider__button {
-  padding: 0;
-  background-color: transparent;
-  .ff-oswald;
-  .t-upper;
-  .font(16px;
-  20px;
-  400;
-  @black);
-}
-
-.slider__button:hover,
-.slider__button:focus {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(17, 17, 17, 0.4);
-}
-
-.slider__button:active {
-  border-bottom: none;
-}
-
 //Планшет
 @media (min-width: @tablet-width) {
   .slider__list {
@@ -55,20 +25,6 @@
 
   .slider__item {
     padding-left: 15px;
-  }
-
-  .slider__button {
-    font-size: 20px;
-    padding-bottom: 6px;
-    border-bottom: 1px dotted #bebebe;
-  }
-
-  .slider__range {
-    width: 570px;
-  }
-
-  .slider__bar {
-    width: 428px;
   }
 }
 
@@ -85,9 +41,5 @@
 
   .slider__item {
     padding-left: 79px;
-  }
-
-  .slider__range {
-    margin-left: 79px;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0 22px 0;
+  padding: 14px 0 22px 0;
 }
 
 .copyright__link {
@@ -18,27 +18,26 @@
   opacity: 0.3;
 }
 
-.copyright__logo {
-  width: 40px;
+.copyright__img {
+  display: block;
+  .no-decor;
+  width: 34px;
   height: auto;
+  padding-top: 5px;
+
+  fill: #666666;
 }
 
-.copyright__logo:hover {
-  fill: #68b738;
+.copyright__logo:hover,
+.copyright__logo:focus {
+  fill: @green;
 }
 
 .copyright__logo:active {
   opacity: 0.3;
 }
 
-.copyright__img {
-  display: block;
-  margin-right: 7px;
-  width: 27px;
-  height: 34px;
-  .no-decor;
-}
-
+//Планшет
 @media (min-width: @tablet-width) {
   .copyright {
     padding: 0;
@@ -50,5 +49,16 @@
 
   .copyright__link {
     margin-bottom: 3px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .copyright__img {
+    padding-top: 7px;
+  }
+
+  .copyright__link {
+    margin-bottom: 0;
   }
 }

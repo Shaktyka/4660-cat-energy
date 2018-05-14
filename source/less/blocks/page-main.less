@@ -11,23 +11,38 @@
   @black);
 }
 
+.page-main__header--catalog {
+  padding-bottom: 28px;
+}
+
 // Планшет
 @media (min-width: @tablet-width) {
   .page-main__header {
     font-size: 60px;
-    padding-top: 62px;
-    margin-bottom: 30px;
+    padding-top: 54px;
+  }
+
+  .page-main__header--catalog {
+    font-size: 60px;
+    margin-bottom: 58px;
   }
 
   .page-main__header--form {
     padding-top: 54px;
+    padding-bottom: 55px;
   }
 }
 
 // Десктоп
 @media (min-width: @desktop-width) {
-  .page-main__header {
-    padding-top: 79px;
+  .page-main__header--form {
+    padding-top: 71px;
+    padding-bottom: 56px;
+  }
+
+  .page-main__header--catalog {
+    padding-top: 71px;
     padding-bottom: 83px;
+    margin-bottom: 0;
   }
 }

@@ -4,7 +4,7 @@
 }
 
 .location__map {
-  // чтобы убрать отступ под картой
+  position: relative;
   display: flex;
   justify-content: center;
   .mp-zero;
@@ -13,7 +13,29 @@
   background-color: @light-gray;
 }
 
+//location__map iframe {
+//  width: auto;
+//  height: 362px;
+//  z-index: 2;
+//}
+//.location__map::before {
+//  position: absolute;
+//  content: "";
+//
+//  top: 139px;
+//  left: 137px;
+//
+//  width: 62px;
+//  height: 53px;
+//
+//  background-image: url("../img/map-pin.png");
+//  background-repeat: no-repeat;
+//  background-size: 62px 53px;
+//
+//  z-index: 5;
+//}
 .location__static-map {
+  //position: absolute;
   width: 100%;
 }
 
@@ -25,7 +47,13 @@
 
   .location__map {
     height: 396px;
-  }
+  } //  .location__map::before {
+  //    width: 113px;
+  //    height: 106px;
+  //    background-size: 113px 106px;
+  //    top: 144px;
+  //    left: 327px;
+  //  }
 }
 
 //Десктоп
@@ -41,5 +69,8 @@
   .location__static-map {
     width: 1440px;
     height: 400px;
-  }
+  } //  .location__map::before {
+  //    top: 151px;
+  //    left: 939px;
+  //  }
 }

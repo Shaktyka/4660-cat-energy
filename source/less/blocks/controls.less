@@ -1,0 +1,61 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 197px;
+  margin: 0 auto;
+  outline: 1px solid orange;
+}
+
+.controls__button {
+  padding: 0;
+  background-color: transparent;
+  .ff-oswald;
+  .t-upper;
+  .font(16px;
+  20px;
+  400;
+  @black);
+}
+
+.controls__button:hover,
+.controls__button:focus {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(17, 17, 17, 0.4);
+}
+
+.controls__button:active {
+  border-bottom: none;
+}
+
+.controls__range {
+  width: 84px;
+}
+
+//Планшет
+@media (min-width: @tablet-width) {
+  .controls {
+    width: 570px;
+  }
+
+  .controls__button {
+    font-size: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #bebebe;
+  }
+
+  .controls__range {
+    width: 428px;
+  }
+
+  .controls__bar {
+    width: 428px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .controls__range {
+    margin-left: 79px;
+  }
+}

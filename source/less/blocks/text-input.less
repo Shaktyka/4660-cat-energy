@@ -1,6 +1,7 @@
 .text-input {
   box-sizing: border-box;
   width: 100%;
+  min-width: 174px;
   height: 44px;
 
   padding: 10px 10px 10px 14px;
@@ -16,22 +17,59 @@
   outline: none;
 }
 
+.text-input:hover {
+  border-color: #cdcdcd;
+}
+
+.text-input:focus {
+  border-color: @dark-gray;
+  border-width: 2px;
+  padding-left: 13px;
+  padding-right: 9px;
+}
+
 .text-input::-webkit-input-placeholder {
   color: @dark-gray;
 }
 
-.text-input::-moz-placeholder {
+::-moz-placeholder,
+:-moz-placeholder {
   color: @dark-gray;
+  opacity: 1;
 }
 
 .text-input::-ms-input-placeholder {
   color: @dark-gray;
 }
 
+.text-input:focus + .form__email-icon,
+.text-input:focus + .form__phone-icon {
+  fill: @green;
+}
+
+//Планшет
 @media (min-width: @tablet-width) {
   .text-input {
     height: 52px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .text-input.form__email {
+    background-position: 97% 50%;
+    padding-left: 23px;
+  }
+
+  .text-input.form__email:focus {
+    padding-left: 22px;
+  }
+
+  .text-input.form__phone {
+    background-position: 97% 50%;
+    padding-left: 16px;
+  }
+
+  .text-input.form__phone:focus {
+    padding-left: 15px;
   }
 }

@@ -22,6 +22,7 @@
   display: inline-flex;
   position: absolute;
   content: "";
+
   top: 42px;
   left: calc(100% + 12px);
 
@@ -44,63 +45,34 @@
   }
 
   .additional__title {
-    //display: flex;
-    //align-items: center;
-    text-align: center;
+    min-width: 340px;
 
     margin-right: -30px;
     margin-bottom: 80px;
-    margin-left: -30px;
+    margin-left: 38px;
+
     font-size: 36px;
     line-height: 36px;
-  } //Зелёные полоски, сделанные без флексов. Отображаются в IE
-  .additional__title::before,
-  .additional__title::after {
-    content: "";
-    display: inline-block;
-    width: 50%;
-    height: 3px;
-    position: relative;
-    vertical-align: middle;
-    background: @green;
   }
 
   .additional__title::before {
-    right: 34px;
-    margin-left: -80%;
+    display: inline-flex;
+    position: absolute;
+    content: "";
+
+    top: 50px;
+    left: -68px;
+
+    width: 30px;
+    height: 3px;
+
+    background-color: @green;
   }
 
   .additional__title::after {
-    left: 38px;
-    margin-right: -41%;
-  } //Зелёные полоски, сделанные на флексах. Не отображаются в IE
-  //  .additional__title::before {
-  //    content: "";
-  //
-  //    flex-grow: 1;
-  //    flex-shrink: 0;
-  //
-  //    width: 30px;
-  //    height: 3px;
-  //    margin-top: 10px;
-  //    margin-right: 35px;
-  //
-  //    background: @green;
-  //  }
-  //
-  //  .additional__title::after {
-  //    content: "";
-  //
-  //    flex-grow: 1;
-  //    flex-shrink: 0;
-  //
-  //    width: 327px;
-  //    height: 3px;
-  //    margin-top: 10px;
-  //    margin-left: 34px;
-  //
-  //    background: @green;
-  //  }
+    top: 50px;
+  }
+
   .additional__list {
     box-sizing: border-box;
     margin-bottom: 69px;

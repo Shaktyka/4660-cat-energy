@@ -18,6 +18,26 @@
 
 //Планшет
 @media (min-width: @tablet-width) {
+  .slider {
+    position: relative;
+    z-index: 5;
+  }
+
+  .slider::after {
+    position: absolute;
+    content: "";
+
+    width: 387px;
+    height: 464px;
+
+    bottom: -68px;
+    right: -30px;
+
+    background-color: #eaeaea;
+    background-position: bottom right;
+    z-index: -1;
+  }
+
   .slider__list {
     min-height: 517px;
     margin-bottom: 17px;

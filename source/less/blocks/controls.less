@@ -3,6 +3,7 @@
   justify-content: space-between;
   width: 197px;
   margin: 0 auto;
+
   outline: 1px solid orange;
 }
 
@@ -28,8 +29,32 @@
   border-bottom: none;
 }
 
-.controls__range {
+.controls__wrapper {
+  position: relative;
+}
+
+.controls__bar {
+  box-sizing: border-box;
+  margin-top: 3px;
+
   width: 84px;
+  height: 14px;
+  background-color: #ffffff;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.controls__range {
+  position: absolute;
+  top: 7px;
+  left: 6px;
+
+  width: 35px;
+  height: 6px;
+  background-color: @green;
+
+  border-radius: 5px;
 }
 
 //Планшет
@@ -44,10 +69,6 @@
     border-bottom: 1px dotted #bebebe;
   }
 
-  .controls__range {
-    width: 428px;
-  }
-
   .controls__bar {
     width: 428px;
   }
@@ -55,7 +76,7 @@
 
 //Десктоп
 @media (min-width: @desktop-width) {
-  .controls__range {
+  .controls__bar {
     margin-left: 79px;
   }
 }

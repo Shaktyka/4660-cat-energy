@@ -1,6 +1,8 @@
 .form-input-checkbox + .form__label::before {
   content: "";
   position: absolute;
+  box-sizing: border-box;
+
   top: -5px;
   left: -46px;
   width: 29px;
@@ -28,5 +30,11 @@
   .form-input-checkbox + .form__label::before {
     width: 40px;
     height: 40px;
+    top: -10px;
+    left: -59px;
+  }
+
+  .form-input-checkbox:checked + .form__label::after {
+    left: -49px;
   }
 }

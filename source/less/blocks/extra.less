@@ -51,9 +51,15 @@
   user-select: none;
 }
 
+//Планшет
 @media (min-width: @tablet-width) {
+  .extra {
+    margin-bottom: 12px;
+  }
+
   .extra__title {
     margin-right: -67px;
+    margin-bottom: 67px;
     margin-left: -70px;
 
     font-size: 36px;
@@ -87,8 +93,14 @@
   }
 
   .extra__option {
-    width: 256px;
+    width: 210px;
+    margin-right: 74px;
+    margin-bottom: 52px;
     padding-left: 59px;
     outline: 1px dashed orange;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
   }
 }

@@ -26,7 +26,7 @@
         </picture>
       </a>
     </div>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="button main-nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -58,13 +58,13 @@
                 <label class="form__label" for="cat-name">
                   Имя:<sup>*</sup>
                 </label>
-                <input class="text-input" type="text" name="cat-name-field" id="cat-name" placeholder="Барсик" required>
+                <input class="text-input text-input--cat-name" type="text" name="cat-name-field" id="cat-name" placeholder="Барсик" required>
               </li>
               <li class="cat-data__field">
                 <label class="form__label" for="cat-weight">
                   Вес&nbsp;(кг):<sup>*</sup>
                 </label>
-                <input class="text-input" type="number" name="cat-weight-field" id="cat-weight" placeholder="7" min="0" max="50" step="1" required>
+                <input class="text-input text-input--weight" type="number" name="cat-weight-field" id="cat-weight" placeholder="7" min="0" max="50" step="1" required>
               </li>
               <li class="cat-data__field">
                 <label class="form__label" for="cat-age">

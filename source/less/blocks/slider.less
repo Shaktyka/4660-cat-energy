@@ -27,7 +27,7 @@
     position: absolute;
     content: "";
 
-    width: 387px;
+    width: 385px;
     height: 464px;
 
     bottom: -68px;
@@ -52,6 +52,12 @@
 @media (min-width: @desktop-width) {
   .slider {
     margin-bottom: 0;
+  }
+
+  .slider::after {
+    width: 411px;
+    bottom: 0;
+    right: -80px;
   }
 
   .slider__list {

@@ -55,33 +55,35 @@
   }
 
   .comment__title {
+    min-width: 180px;
+
     margin-right: -67px;
     margin-bottom: 41px;
-    margin-left: -70px;
+    margin-left: 0;
     padding-top: 65px;
 
     font-size: 36px;
     line-height: 36px;
   }
 
-  .comment__title::after {
-    margin-top: 10px;
-    margin-left: 42px;
-    flex-grow: 30;
-  }
-
   .comment__title::before {
+    display: inline-flex;
+    position: absolute;
     content: "";
 
-    flex-grow: 1;
-    flex-shrink: 0;
+    top: 87px;
+    left: -70px;
+    width: 30px;
 
-    width: 15px;
     height: 3px;
-    margin-top: 10px;
-    margin-right: 40px;
+    margin-right: 39px;
 
-    background: @green;
+    background-color: @green;
+  }
+
+  .comment__title::after {
+    top: 87px;
+    left: calc(100% + 22px);
   }
 
   .comment__field {

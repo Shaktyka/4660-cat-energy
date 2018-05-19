@@ -61,35 +61,34 @@
   }
 
   .extra__title {
+    min-width: 210px;
+
     margin-right: -67px;
     margin-bottom: 67px;
-    margin-left: -70px;
+    margin-left: 0;
 
     font-size: 36px;
     line-height: 36px;
   }
 
-  .extra__title::after {
-    margin-left: 42px;
-    flex-grow: 30;
-  }
-
   .extra__title::before {
+    display: inline-flex;
+    position: absolute;
     content: "";
 
-    flex-grow: 1;
-    flex-shrink: 0;
+    top: 50px;
+    left: -70px;
+    width: 30px;
 
-    width: 17px;
     height: 3px;
-    margin-top: 10px;
     margin-right: 39px;
 
-    background: @green;
+    background-color: @green;
   }
 
   .extra__title::after {
-    margin-top: 10px;
+    top: 50px;
+    left: calc(100% + 20px);
   }
 
   .extra__list {

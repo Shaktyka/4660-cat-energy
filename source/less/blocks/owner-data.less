@@ -49,36 +49,39 @@
   margin-right: 11px;
 }
 
+//Планшет
 @media (min-width: @tablet-width) {
   .owner-data__title {
+    min-width: 512px;
+
     padding-top: 0;
     margin-right: -67px;
     margin-bottom: 76px;
-    margin-left: -70px;
+    margin-left: 0;
 
     font-size: 36px;
     line-height: 36px;
   }
 
-  .owner-data__title::after {
-    margin-top: 10px;
-    margin-left: 40px;
-    flex-grow: 10;
-  }
-
   .owner-data__title::before {
+    display: inline-flex;
+    position: absolute;
     content: "";
 
-    flex-grow: 1;
-    flex-shrink: 0;
-
-    width: 25px;
+    top: 22px;
+    left: -70px;
+    width: 30px;
     height: 3px;
-    margin-top: 10px;
     margin-right: 39px;
 
-    background: @green;
+    background-color: @green;
   }
+
+  .owner-data__title::after {
+    top: 22px;
+    left: calc(100% + 8px);
+  }
+
 
   .owner-data__field {
     margin-bottom: 20px;

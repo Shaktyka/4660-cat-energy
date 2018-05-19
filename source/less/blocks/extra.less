@@ -3,12 +3,14 @@
 }
 
 .extra__title {
-  display: flex;
-  align-items: center; //width: 165px;
+  display: inline-flex;
+  position: relative;
+  min-width: 142px;
+
   .mp-zero;
   padding-top: 28px;
-  margin-bottom: 40px;
   margin-right: -20px;
+  margin-bottom: 40px;
 
   .ff-oswald;
   .font(24px;
@@ -18,16 +20,17 @@
 }
 
 .extra__title::after {
+  display: inline-flex;
+  position: absolute;
   content: "";
 
-  flex-grow: 1;
-  flex-shrink: 0;
+  top: 42px;
+  left: calc(100% + 22px);
 
-  width: 50px;
+  width: 100vw;
   height: 3px;
-  margin-left: 24px;
 
-  background: @green;
+  background-color: @green;
 }
 
 .extra__list {

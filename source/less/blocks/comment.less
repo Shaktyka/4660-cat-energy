@@ -1,10 +1,12 @@
 .comment__title {
-  display: flex;
-  align-items: center; //width: 142px;
+  display: inline-flex;
+  position: relative;
+  min-width: 120px;
+
   .mp-zero;
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 28px;
   margin-right: -20px;
+  padding-bottom: 35px;
 
   .ff-oswald;
   .font(24px;
@@ -14,23 +16,24 @@
 }
 
 .comment__title::after {
+  display: inline-flex;
+  position: absolute;
   content: "";
 
-  flex-grow: 1;
-  flex-shrink: 0;
+  top: 42px;
+  left: calc(100% + 17px);
 
-  width: 50px;
+  width: 100vw;
   height: 3px;
-  margin-left: 24px;
 
-  background: @green;
+  background-color: @green;
 }
 
 .comment__field {
   display: block;
   box-sizing: border-box;
   height: 150px;
-  padding: 11px 10px 15px 15px;
+  padding: 12px 10px 15px 15px;
 
   .ff-oswald;
   .t-upper;
@@ -41,7 +44,7 @@
 }
 
 .comment__field:focus {
-  padding-top: 10px;
+  padding-top: 11px;
   padding-left: 14px;
 }
 

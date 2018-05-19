@@ -82,12 +82,29 @@
     left: calc(100% + 8px);
   }
 
-
   .owner-data__field {
     margin-bottom: 20px;
   }
 
   .owner-data__field .form__label {
     margin-right: 19px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .owner-data__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .owner-data__field {
+    width: 570px;
+  }
+
+  .owner-data__field:first-child {
+    margin-right: 80px;
   }
 }

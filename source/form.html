@@ -59,7 +59,7 @@
                 <label class="form__label" for="cat-name">
                   Имя:<sup>*</sup>
                 </label>
-                <input class="text-input text-input--cat-name" type="text" name="cat-name-field" id="cat-name" placeholder="Барсик" required>
+                <input class="text-input text-input--cat-name" type="text" name="cat-name-field" id="cat-name" placeholder="Барсик" pattern="[A-Za-zА-Яа-яЁё]{1,40}" maxlength="40" required autofocus>
               </li>
               <li class="cat-data__field">
                 <label class="form__label" for="cat-weight">

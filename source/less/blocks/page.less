@@ -62,6 +62,18 @@ input::-webkit-inner-spin-button {
   appearance: none;
 }
 
+.input-error input:required {
+  border: 2px solid #ff8282;
+}
+
+.input-error.text-input + .form__email-icon {
+  fill: #ff8282;
+}
+
+.input-error.text-input + .form__phone-icon {
+  fill: #ff8282;
+}
+
 //:focus {
 //  outline: none;
 //}

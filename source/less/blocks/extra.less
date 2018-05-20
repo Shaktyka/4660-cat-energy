@@ -96,7 +96,6 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    outline: 1px dashed gray;
   }
 
   .extra__option {
@@ -104,10 +103,45 @@
     margin-right: 74px;
     margin-bottom: 52px;
     padding-left: 59px;
-    outline: 1px dashed orange;
 
     &:nth-child(even) {
       margin-right: 0;
     }
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .extra {
+    margin-bottom: 72px;
+  }
+
+  .extra__title {
+    padding-top: 30px;
+  }
+
+  .extra__title::before {
+    top: 52px;
+    left: -110px;
+    width: 70px;
+  }
+
+  .extra__title::after {
+    top: 52px;
+  }
+
+  .extra__option:nth-child(2) {
+    margin-right: 57px;
+  }
+
+  .extra__option {
+    margin-right: 57px;
+    margin-bottom: 0;
+    padding-left: 58px;
+  }
+
+  .extra__option:last-child {
+    width: 180px;
+    margin-right: 0;
   }
 }

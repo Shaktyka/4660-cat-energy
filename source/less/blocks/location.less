@@ -12,9 +12,12 @@
   overflow: hidden;
   background-color: @light-gray;
   background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 320px auto;
+    background-position: center top;
   }
 }
 
@@ -35,6 +38,7 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 768px auto;
     }
   }
 }
@@ -51,6 +55,7 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: 1300px auto;
     }
   }
 }

@@ -1,3 +1,4 @@
+// Общие стили
 .page {
   min-width: 320px;
   .mp-zero;
@@ -45,6 +46,7 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 651px 697px;
     }
   }
 
@@ -53,6 +55,7 @@
   }
 }
 
+// Стили для инпутов
 input[type="number"] {
   appearance: textfield;
 }
@@ -62,22 +65,10 @@ input::-webkit-inner-spin-button {
   appearance: none;
 }
 
-.input-error input:required {
+:invalid {
+  box-shadow: none;
+}
+
+input:invalid {
   border: 2px solid #ff8282;
 }
-
-.input-error.text-input + .form__email-icon {
-  fill: #ff8282;
-}
-
-.input-error.text-input + .form__phone-icon {
-  fill: #ff8282;
-}
-
-//:focus {
-//  outline: none;
-//}
-// временно
-//* {
-//  outline: 1px solid green;
-//}

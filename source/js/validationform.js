@@ -10,20 +10,20 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-  storage = localStorage.getItem("email");
+storage = localStorage.getItem("email");
 } catch (err) {
   isStorageSupport = false;
 }
 
 form.addEventListener("submit", function (evt) {
   if (!catName.value || !catWeight.value || !email.value || !phone.value) {
-    form.classList.add("input-error");
-    evt.preventDefault();
-    console.log("Введите, пожалуйста, имя кота, его вес, ваш e-mail и номер телефона для связи.");
+  form.classList.add("input-error");
+  evt.preventDefault();
+  console.log("Введите, пожалуйста, имя кота, его вес, ваш e-mail и номер телефона для связи.");
   } else {
-    form.classList.remove("input-error");
-    if (isStorageSupport) {
-      localStorage.setItem("email", email.value);
-    }
+  form.classList.remove("input-error");
+  if (isStorageSupport) {
+  localStorage.setItem("email", email.value);
+  }
   }
 });

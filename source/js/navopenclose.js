@@ -1,4 +1,4 @@
-﻿"use strict";
+"use strict";
 //Скрипт для открытия/закрытия меню модальной версии
 var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-nav__toggle");
@@ -9,7 +9,7 @@ if (navMain.classList.contains("main-nav--opened")) {
   navMain.classList.add("main-nav--closed");
 }
 
-navToggle.addEventListener("click", function() {
+navToggle.addEventListener("click", function () {
   if (navMain.classList.contains("main-nav--closed")) {
     navMain.classList.remove("main-nav--closed");
     navMain.classList.add("main-nav--opened");

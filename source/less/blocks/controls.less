@@ -1,9 +1,8 @@
 .controls {
   display: flex;
   justify-content: space-between;
-  width: 197px;
+  width: 198px;
   margin: 0 auto;
-  outline: 1px solid orange;
 }
 
 .controls__button {
@@ -15,6 +14,7 @@
   20px;
   400;
   @black);
+  border: 1px solid transparent;
 }
 
 .controls__button:hover,
@@ -28,8 +28,32 @@
   border-bottom: none;
 }
 
+.controls__wrapper {
+  position: relative;
+}
+
+.controls__bar {
+  box-sizing: border-box;
+  margin-top: 3px;
+
+  width: 81px;
+  height: 14px;
+  background-color: #ffffff;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
 .controls__range {
-  width: 84px;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+
+  width: 35px;
+  height: 6px;
+  background-color: @green;
+
+  border-radius: 5px;
 }
 
 //Планшет
@@ -44,18 +68,61 @@
     border-bottom: 1px dotted #bebebe;
   }
 
-  .controls__range {
-    width: 428px;
-  }
-
   .controls__bar {
     width: 428px;
+    height: 6px;
+    margin-top: 7px;
+
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .controls__range {
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    top: -7px;
+    left: 199px;
+
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid @green;
+
+      box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 12px;
+      left: 12px;
+
+      width: 8px;
+      height: 8px;
+      background-color: @green;
+      border-radius: 50%;
+    }
+  }
+
+  .controls__range:active::before {
+    top: 11px;
+    left: 11px;
   }
 }
 
 //Десктоп
 @media (min-width: @desktop-width) {
-  .controls__range {
+  .controls {
     margin-left: 79px;
   }
 }

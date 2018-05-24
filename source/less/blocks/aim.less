@@ -2,7 +2,7 @@
   margin-left: -20px;
   margin-right: -20px;
   padding-top: 26px;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
   border: 1px solid #ededed;
 }
 
@@ -14,15 +14,15 @@
 }
 
 .aim__option {
-  margin-bottom: 24px;
-  padding-left: 45px;
+  margin-bottom: 25px;
+  padding-left: 44px;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.aim__option .form__label {
+.aim__option label {
   position: relative;
   display: block;
 
@@ -42,5 +42,15 @@
   .aim__option {
     margin-bottom: 33px;
     padding-left: 67px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .aim {
+    width: 570px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }

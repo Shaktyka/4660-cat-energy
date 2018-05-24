@@ -18,7 +18,7 @@
   display: block;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 }
 
 .form__email,
@@ -33,11 +33,13 @@
 }
 
 .form__email-icon {
-  right: 35px;
+  right: 16px;
+  top: 16px;
 }
 
 .form__phone-icon {
-  right: 33px;
+  right: 13px;
+  top: 13px;
 }
 
 //Планшет
@@ -49,5 +51,32 @@
 
   .form__legend-wrapper {
     display: inline-block;
+    vertical-align: top;
+    padding-top: 16px;
+  }
+
+  .form__legend {
+    font-size: 16px;
+  }
+
+  .form__email-icon {
+    right: 19px;
+    top: 20px;
+  }
+
+  .form__phone-icon {
+    right: 16px;
+    top: 17px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .form__email-icon {
+    right: 20px;
+  }
+
+  .form__phone-icon {
+    right: 19px;
   }
 }

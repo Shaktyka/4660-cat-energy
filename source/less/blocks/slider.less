@@ -12,12 +12,37 @@
   display: flex;
 }
 
+.slider__picture {
+  width: 320px;
+  height: auto;
+}
+
 .slider__item--not-active {
   display: none;
 }
 
 //Планшет
 @media (min-width: @tablet-width) {
+  .slider {
+    position: relative;
+    z-index: 5;
+  }
+
+  .slider::after {
+    position: absolute;
+    content: "";
+
+    width: 385px;
+    height: 462px;
+
+    bottom: -66px;
+    right: -30px;
+
+    background-color: #eaeaea;
+    background-position: bottom right;
+    z-index: -1;
+  }
+
   .slider__list {
     min-height: 517px;
     margin-bottom: 17px;
@@ -26,12 +51,22 @@
   .slider__item {
     padding-left: 15px;
   }
+
+  .slider__picture {
+    width: 690px;
+  }
 }
 
 //Десктоп
 @media (min-width: @desktop-width) {
   .slider {
     margin-bottom: 0;
+  }
+
+  .slider::after {
+    width: 326px;
+    bottom: 0;
+    right: -80px;
   }
 
   .slider__list {

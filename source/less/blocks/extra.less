@@ -3,12 +3,14 @@
 }
 
 .extra__title {
-  display: flex;
-  align-items: center; //width: 165px;
+  display: inline-flex;
+  position: relative;
+  min-width: 142px;
+
   .mp-zero;
   padding-top: 28px;
-  margin-bottom: 40px;
   margin-right: -20px;
+  margin-bottom: 40px;
 
   .ff-oswald;
   .font(24px;
@@ -18,16 +20,17 @@
 }
 
 .extra__title::after {
+  display: inline-flex;
+  position: absolute;
   content: "";
 
-  flex-grow: 1;
-  flex-shrink: 0;
+  top: 42px;
+  left: calc(100% + 17px);
 
-  width: 50px;
+  width: 100vw;
   height: 3px;
-  margin-left: 24px;
 
-  background: @green;
+  background-color: @green;
 }
 
 .extra__list {
@@ -51,31 +54,41 @@
   user-select: none;
 }
 
+//Планшет
 @media (min-width: @tablet-width) {
+  .extra {
+    margin-bottom: 12px;
+  }
+
   .extra__title {
+    min-width: 210px;
+
     margin-right: -67px;
-    margin-left: -70px;
+    margin-bottom: 67px;
+    margin-left: 0;
 
     font-size: 36px;
     line-height: 36px;
   }
 
-  .extra__title::after {
-    margin-left: 42px;
-    flex-grow: 30;
-  }
-
   .extra__title::before {
+    display: inline-flex;
+    position: absolute;
     content: "";
 
-    flex-grow: 1;
-    flex-shrink: 0;
-
+    top: 50px;
+    left: -70px;
     width: 30px;
-    height: 3px;
-    margin-right: 25px;
 
-    background: @green;
+    height: 3px;
+    margin-right: 39px;
+
+    background-color: @green;
+  }
+
+  .extra__title::after {
+    top: 50px;
+    left: calc(100% + 20px);
   }
 
   .extra__list {
@@ -83,12 +96,52 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    outline: 1px dashed gray;
   }
 
   .extra__option {
-    width: 256px;
+    width: 210px;
+    margin-right: 74px;
+    margin-bottom: 52px;
     padding-left: 59px;
-    outline: 1px dashed orange;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .extra {
+    margin-bottom: 72px;
+  }
+
+  .extra__title {
+    padding-top: 30px;
+  }
+
+  .extra__title::before {
+    top: 52px;
+    left: -110px;
+    width: 70px;
+  }
+
+  .extra__title::after {
+    top: 52px;
+  }
+
+  .extra__option:nth-child(2) {
+    margin-right: 57px;
+  }
+
+  .extra__option {
+    margin-right: 57px;
+    margin-bottom: 0;
+    padding-left: 58px;
+  }
+
+  .extra__option:last-child {
+    width: 180px;
+    margin-right: 0;
   }
 }

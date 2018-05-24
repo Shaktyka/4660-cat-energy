@@ -1,3 +1,4 @@
+// Общие стили
 .page {
   min-width: 320px;
   .mp-zero;
@@ -9,7 +10,6 @@
   400;
   @dark-gray);
 
-  outline: 1px solid #000000;
   overflow-x: hidden;
 }
 
@@ -18,7 +18,7 @@
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -39,12 +39,14 @@
   .page--index-page {
     background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(@green 305px, transparent 305px);
     background-repeat: no-repeat;
-    background-size: 651px 697px;
-    background-position: right top;
+    background-size: 720px 697px;
+    background-position: 112% top;
     z-index: -1;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px 697px;
+      background-position: 112% top;
     }
   }
 
@@ -53,6 +55,7 @@
   }
 }
 
+// Стили для инпутов
 input[type="number"] {
   appearance: textfield;
 }
@@ -62,7 +65,10 @@ input::-webkit-inner-spin-button {
   appearance: none;
 }
 
-// временно
-//* {
-//  outline: 1px solid green;
-//}
+:invalid {
+  box-shadow: none;
+}
+
+input:invalid {
+  border: 2px solid #ff8282;
+}

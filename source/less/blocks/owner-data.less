@@ -1,10 +1,13 @@
 .owner-data__title {
-  display: flex;
-  align-items: center; //width: 200px;
+  display: inline-flex;
+  position: relative;
+  width: 182px;
+
   .mp-zero;
   padding-top: 28px;
   margin-right: -20px;
   margin-bottom: 34px;
+
   .ff-oswald;
   .font(24px;
   24px;
@@ -13,15 +16,17 @@
 }
 
 .owner-data__title::after {
+  display: inline-flex;
+  position: absolute;
   content: "";
 
-  flex-grow: 1;
-  flex-shrink: 0;
+  top: 42px;
+  left: calc(100% + 10px);
 
-  width: 99px;
+  width: 100vw;
   height: 3px;
 
-  background: @green;
+  background-color: @green;
 }
 
 .owner-data__list {
@@ -30,6 +35,7 @@
 }
 
 .owner-data__field {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,35 +50,37 @@
   margin-right: 11px;
 }
 
+//Планшет
 @media (min-width: @tablet-width) {
   .owner-data__title {
+    min-width: 513px;
+
     padding-top: 0;
     margin-right: -67px;
     margin-bottom: 76px;
-    margin-left: -70px;
+    margin-left: 0;
 
     font-size: 36px;
     line-height: 36px;
   }
 
-  .owner-data__title::after {
-    margin-top: 10px;
-    margin-left: 40px;
-    flex-grow: 10;
-  }
-
   .owner-data__title::before {
+    display: inline-flex;
+    position: absolute;
     content: "";
 
-    flex-grow: 1;
-    flex-shrink: 0;
-
-    width: 25px;
+    top: 22px;
+    left: -70px;
+    width: 30px;
     height: 3px;
-    margin-top: 10px;
     margin-right: 39px;
 
-    background: @green;
+    background-color: @green;
+  }
+
+  .owner-data__title::after {
+    top: 22px;
+    left: calc(100% + 8px);
   }
 
   .owner-data__field {
@@ -81,5 +89,29 @@
 
   .owner-data__field .form__label {
     margin-right: 19px;
+  }
+}
+
+//Десктоп
+@media (min-width: @desktop-width) {
+  .owner-data__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .owner-data__field {
+    width: 570px;
+    margin-bottom: 0;
+  }
+
+  .owner-data__field:first-child {
+    margin-right: 80px;
+  }
+
+  .owner-data__title::before {
+    left: -110px;
+    width: 70px;
   }
 }

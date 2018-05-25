@@ -36,12 +36,6 @@
   color: @dark-gray;
 }
 
-::-moz-placeholder,
-:-moz-placeholder {
-  color: @dark-gray;
-  opacity: 1;
-}
-
 .text-input::-ms-input-placeholder {
   color: @dark-gray;
 }
@@ -54,14 +48,27 @@
   fill: @green;
 }
 
-.text-input.form__email:invalid + .form__email-icon {
+.error input {
+  border: 2px solid #ff8282;
+  box-shadow: none;
+}
+
+.form__email.error + .form__email-icon {
   fill: #ff8282;
 }
 
-.text-input.form__phone:invalid + .form__phone-icon {
+.form__phone.error + .form__phone-icon {
   fill: #ff8282;
 }
 
+// Временно отключено
+//.text-input.form__email:invalid + .form__email-icon {
+//  fill: #ff8282;
+//}
+//
+//.text-input.form__phone:invalid + .form__phone-icon {
+//  fill: #ff8282;
+//}
 //Планшет
 @media (min-width: @tablet-width) {
   .text-input {

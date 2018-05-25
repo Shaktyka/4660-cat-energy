@@ -56,19 +56,28 @@
 }
 
 // Стили для инпутов
+// Стилизация плейсхолдеров в Мозилле
+::-moz-placeholder,
+:-moz-placeholder {
+  color: @dark-gray;
+  opacity: 1;
+}
+
+// Отключили стрелки в полях с типом number
 input[type="number"] {
   appearance: textfield;
 }
 
+// Отключили стрелки в полях с типом number
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   appearance: none;
 }
 
-:invalid {
-  box-shadow: none;
-}
-
-input:invalid {
-  border: 2px solid #ff8282;
-}
+// Временно отключено
+//:invalid {
+//  box-shadow: none;
+//}
+//input:invalid {
+//  border: 2px solid #ff8282;
+//}

@@ -14,7 +14,7 @@ form.addEventListener("submit", function (evt) {
   phone.classList.add("error");
   console.log("Введите, пожалуйста, имя кота, его вес, ваш e-mail и номер телефона для связи.");
   } else {
-  form.classList.remove("input-error");
+  form.classList.remove("error");
   email.classList.remove("error");
   phone.classList.remove("error");
   }

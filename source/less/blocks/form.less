@@ -42,6 +42,15 @@
   top: 13px;
 }
 
+// Стили для оформления пиктограмм при невалидном вводе
+.form__email.error + .form__email-icon {
+  fill: #ff8282;
+}
+
+.form__phone.error + .form__phone-icon {
+  fill: #ff8282;
+}
+
 //Планшет
 @media (min-width: @tablet-width) {
   .form__label {
@@ -67,6 +76,14 @@
   .form__phone-icon {
     right: 16px;
     top: 17px;
+  }
+
+  .form__email.error {
+    padding-left: 19px;
+  }
+
+  .form__phone.error {
+    padding-left: 15px;
   }
 }
 

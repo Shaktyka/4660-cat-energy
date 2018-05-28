@@ -59,13 +59,13 @@
                 <label class="form__label" for="cat-name">
                   Имя:<sup>*</sup>
                 </label>
-                <input class="text-input text-input--cat-name" type="text" name="cat-name-field" id="cat-name" placeholder="Барсик" pattern="[A-Za-zА-Яа-яЁё]{1,40}" maxlength="40" required autofocus>
+                <input class="text-input text-input--cat-name" type="text" name="cat-name-field" id="cat-name" placeholder="Барсик" pattern="[A-Za-zА-Яа-яЁё]{1,40}">
               </li>
               <li class="cat-data__field">
                 <label class="form__label" for="cat-weight">
                   Вес&nbsp;(кг):<sup>*</sup>
                 </label>
-                <input class="text-input text-input--weight" type="number" name="cat-weight-field" id="cat-weight" placeholder="7" min="0" max="50" step="1" required>
+                <input class="text-input text-input--weight" type="number" name="cat-weight-field" id="cat-weight" placeholder="7" min="0" max="50" step="1">
               </li>
               <li class="cat-data__field">
                 <label class="form__label" for="cat-age">
@@ -106,14 +106,14 @@
                 <label class="form__label" for="user-email">
                 e&#8209;mail:<sup>*</sup>
                 </label>
-                <input class="text-input form__email" type="email" name="email-field" id="user-email" placeholder="kuklachev@gmail.com" required><svg class="form__email-icon" width="17" height="13">
+                <input class="text-input form__email" type="email" name="email-field" id="user-email" placeholder="kuklachev@gmail.com"><svg class="form__email-icon" width="17" height="13">
                 <use xlink:href="#sprite-mail"></use></svg>
               </li>
               <li class="owner-data__field">
                 <label class="form__label" for="user-phone">
                 Телефон:<sup>*</sup>
                 </label>
-                <input class="text-input form__phone" type="tel" name="phone-field" id="user-phone" placeholder="8 (960) 900-60-90"  required><svg class="form__phone-icon" width="20" height="20">
+                <input class="text-input form__phone" type="tel" name="phone-field" id="user-phone" placeholder="8 (960) 900-60-90"><svg class="form__phone-icon" width="20" height="20">
                 <use xlink:href="#sprite-phone"></use></svg>
               </li>
             </ul>
@@ -126,19 +126,19 @@
             <h2 class="extra__title">Дополнительно</h2>
             <ul class="extra__list">
               <li class="extra__option">
-                <input class="visually-hidden form-input form-input-checkbox" type="checkbox" name="extra" id="sweetener" value="sweetener" checked>
+                <input class="visually-hidden form-input form-input-checkbox" type="checkbox" name="extra[]" id="sweetener" value="sweetener" checked>
                 <label class="form__label" for="sweetener" tabindex="0">сахарозаменитель</label>
               </li>
               <li class="extra__option">
-                <input class="visually-hidden form-input form-input-checkbox" type="checkbox" name="extra" id="water" value="water">
+                <input class="visually-hidden form-input form-input-checkbox" type="checkbox" name="extra[]" id="water" value="water">
                 <label class="form__label" for="water" tabindex="0">питьевая вода</label>
               </li>
               <li class="extra__option">
-                <input class="visually-hidden form-input form-input-checkbox" type="checkbox" name="extra" id="milk" value="milk">
+                <input class="visually-hidden form-input form-input-checkbox" type="checkbox" name="extra[]" id="milk" value="milk">
                 <label class="form__label" for="milk" tabindex="0">молоко</label>
               </li>
               <li class="extra__option">
-                <input class="visually-hidden form-input form-input-checkbox" type="checkbox" name="extra" id="vitamins" value="vitamins ">
+                <input class="visually-hidden form-input form-input-checkbox" type="checkbox" name="extra[]" id="vitamins" value="vitamins ">
                 <label class="form__label" for="vitamins" tabindex="0">витамины</label>
               </li>
             </ul>
@@ -215,7 +215,8 @@
       </div>
     </div>
   </footer>
-  <script src="/js/navopenclose.min.js"></script>
+  <script src="js/validationform.min.js"></script>
+  <script src="js/navopenclose.min.js"></script>
 </body>
 
 </html>

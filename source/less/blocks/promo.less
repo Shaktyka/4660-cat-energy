@@ -41,6 +41,7 @@
 @media (min-width: @tablet-width) {
   .promo {
     position: relative;
+    margin-bottom: -51px;
   }
 
   .promo__text-wrapper {
@@ -81,8 +82,8 @@
   }
 
   .promo__button {
-    position: absolute;
-    top: 284px;
+    position: relative;
+    top: -579px;
     width: 223px;
     margin-left: 90px;
     font-size: 20px;
@@ -98,6 +99,9 @@
 @media (min-width: @desktop-width) {
   .promo {
     display: flex;
+    flex-direction: column;
+    min-height: 526px;
+    margin-bottom: 79px;
   }
 
   .promo__text-wrapper {
@@ -107,9 +111,9 @@
   }
 
   .promo__image-wrapper {
-    position: relative;
-    right: 44px;
-    top: -29px;
+    position: absolute;
+    right: 219px;
+    top: 25px;
   }
 
   .promo__title {
@@ -120,12 +124,13 @@
   .promo__slogan {
     color: @black;
     margin-left: 0;
+    margin-bottom: 53px;
   }
 
   .promo__button {
+    position: static;
     width: 225px;
     margin-left: 80px;
-    top: 340px;
   }
 
   .promo__image {

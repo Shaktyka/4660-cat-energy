@@ -48,27 +48,34 @@
       background-size: 720px 697px;
       background-position: 112% top;
     }
-  }
-
+  } // Подчёркивание активной ссылки меню на главной
   .page--index-page .site-list__item.site-list__item--active {
     border-bottom: 2px solid @white;
   }
 }
 
 // Стили для инпутов
+// Стилизация плейсхолдеров в Мозилле
+::-moz-placeholder,
+:-moz-placeholder {
+  color: @dark-gray;
+  opacity: 1;
+}
+
+// Отключили стрелки в полях с типом number
 input[type="number"] {
   appearance: textfield;
 }
 
+// Отключили стрелки в полях с типом number
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   appearance: none;
 }
 
-:invalid {
-  box-shadow: none;
-}
-
-input:invalid {
-  border: 2px solid #ff8282;
+// Стили при невалидном вооде
+input.error,
+input.error:hover {
+  border: 1px solid #ff8282;
+  box-shadow: inset 0 0 0 1px #ff8282;
 }

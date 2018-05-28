@@ -1,83 +1,83 @@
 // Общие стили
 .page {
-  min-width: 320px;
-  .mp-zero;
-  background-color: @white;
+	min-width: 320px;
+	.mp-zero;
+	background-color: @white;
 
-  font-family: "Arial", sans-serif;
-  .font(14px;
-  18px;
-  400;
-  @dark-gray);
+	font-family: "Arial", sans-serif;
+	.font(14px;
+	18px;
+	400;
+	@dark-gray);
 
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 .img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden {
-  position: absolute;
+	position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
 
-  white-space: nowrap;
+	white-space: nowrap;
 
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 //Десктоп
 @media (min-width: @desktop-width) {
-  .page--index-page {
-    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(@green 305px, transparent 305px);
-    background-repeat: no-repeat;
-    background-size: 720px 697px;
-    background-position: 112% top;
-    z-index: -1;
+	.page--index-page {
+		background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(@green 305px, transparent 305px);
+		background-repeat: no-repeat;
+		background-size: 720px 697px;
+		background-position: 112% top;
+		z-index: -1;
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
-      background-size: 720px 697px;
-      background-position: 112% top;
-    }
-  }
+		@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+			background-image: url("../img/index-background-desktop@2x.jpg");
+			background-size: 720px 697px;
+			background-position: 112% top;
+		}
+	}
 
-  .page--index-page .site-list__item.site-list__item--active {
-    border-bottom: 2px solid @white;
-  }
+	.page--index-page .site-list__item.site-list__item--active {
+		border-bottom: 2px solid @white;
+	}
 }
 
 // Стили для инпутов
 // Стилизация плейсхолдеров в Мозилле
 ::-moz-placeholder,
 :-moz-placeholder {
-  color: @dark-gray;
-  opacity: 1;
+	color: @dark-gray;
+	opacity: 1;
 }
 
 // Отключили стрелки в полях с типом number
 input[type="number"] {
-  appearance: textfield;
+	appearance: textfield;
 }
 
 // Отключили стрелки в полях с типом number
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  appearance: none;
+	appearance: none;
 }
 
-// Временно отключено
-//:invalid {
-//  box-shadow: none;
-//}
-//input:invalid {
-//  border: 2px solid #ff8282;
-//}
+// Стили при невалидном вооде
+.error,
+.error:hover {
+	border: 2px solid #ff8282;
+	box-shadow: none;
+//	padding-left: 13px;
+}
